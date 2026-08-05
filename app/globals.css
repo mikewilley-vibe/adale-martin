@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0a2342;
+  --navy-deep: #061628;
+  --forest: #1f4d3a;
+  --forest-soft: #2a6349;
+  --gold: #c9a227;
+  --gold-bright: #e0b93a;
+  --sand: #f3efe6;
+  --sand-deep: #e8e1d4;
+  --ink: #142033;
+  --muted: #5a6575;
+  --paper: #faf8f4;
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-forest: var(--forest);
+  --color-forest-soft: var(--forest-soft);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-sand: var(--sand);
+  --color-sand-deep: var(--sand-deep);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-paper: var(--paper);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-source-serif);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background:
+      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(31, 77, 58, 0.08), transparent 50%),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(201, 162, 39, 0.1), transparent 45%),
+      linear-gradient(180deg, var(--paper) 0%, var(--sand) 100%);
+    color: var(--foreground);
+    font-family: var(--font-source-sans), system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--gold) 45%, white);
+    color: var(--navy-deep);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .fade-up {
+    animation: fadeUp 0.8s ease-out both;
+  }
+
+  .fade-up-delay-1 {
+    animation: fadeUp 0.8s ease-out 0.12s both;
+  }
+
+  .fade-up-delay-2 {
+    animation: fadeUp 0.8s ease-out 0.24s both;
+  }
+
+  .fade-up-delay-3 {
+    animation: fadeUp 0.8s ease-out 0.36s both;
+  }
+
+  .ticker-track {
+    animation: ticker 32s linear infinite;
+  }
+
+  .font-display {
+    font-family: var(--font-fraunces), Georgia, serif;
+  }
+
+  .font-serif {
+    font-family: var(--font-source-serif), Georgia, serif;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up,
+  .fade-up-delay-1,
+  .fade-up-delay-2,
+  .fade-up-delay-3,
+  .ticker-track {
+    animation: none;
+  }
+}
