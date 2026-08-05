@@ -41,7 +41,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(105deg, rgba(6,22,40,0.94) 0%, rgba(6,22,40,0.78) 40%, rgba(10,35,66,0.28) 68%, rgba(10,35,66,0.45) 100%), linear-gradient(0deg, rgba(6,22,40,0.7) 0%, transparent 45%)",
+              "linear-gradient(105deg, rgba(0,44,88,0.94) 0%, rgba(0,44,88,0.78) 40%, rgba(0,54,108,0.28) 68%, rgba(0,54,108,0.45) 100%), linear-gradient(0deg, rgba(0,44,88,0.7) 0%, transparent 45%)",
           }}
         />
 
@@ -176,7 +176,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href={site.donateUrl} variant="gold" external>
+              <ButtonLink href="/donate" variant="gold">
                 Donate
               </ButtonLink>
               <ButtonLink href="/get-involved" variant="ghost">

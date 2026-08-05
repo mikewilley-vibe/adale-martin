@@ -8,6 +8,8 @@ export const site = {
   committee: "Friends of Adale Martin",
   disclaimer: "Authorized and Paid for by Friends of Adale Martin",
   donateUrl: "https://www.rally.org/adalemartin",
+  /** Paste Donorbox campaign URL when ready — overrides Rally for CTAs. */
+  donorboxUrl: "",
   earlyVoting: "Early voting is September 18 – October 31",
   earlyVotingStart: "September 18",
   earlyVotingEnd: "October 31",
@@ -35,7 +37,29 @@ export const nav = [
   { label: "Why Adale", href: "/compare" },
   { label: "What Parents Are Saying", href: "/parents" },
   { label: "Get Involved", href: "/get-involved" },
+  { label: "Donate", href: "/donate" },
   { label: "Vote", href: "/vote" },
+] as const;
+
+export const donateAmounts = [25, 50, 100, 250] as const;
+
+export const donateImpacts = [
+  {
+    amount: "$25",
+    label: "Literature for a block",
+  },
+  {
+    amount: "$50",
+    label: "Yard signs for neighbors",
+  },
+  {
+    amount: "$100",
+    label: "Canvass supplies for a weekend",
+  },
+  {
+    amount: "$250",
+    label: "Digital ads reaching Ward 1 parents",
+  },
 ] as const;
 
 export const recordStats = [

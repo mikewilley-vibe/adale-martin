@@ -22,7 +22,7 @@ export function SiteHeader() {
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="mx-auto flex max-w-7xl items-start justify-between gap-6 px-5 py-5 md:px-8 md:py-6">
         <Link href="/" className="group shrink-0" aria-label="Home">
-          <div className="overflow-hidden border border-white/20 bg-navy shadow-[0_12px_40px_rgba(6,22,40,0.35)] transition duration-300 group-hover:-translate-y-0.5">
+          <div className="overflow-hidden border border-white/20 bg-navy shadow-[0_12px_40px_rgba(0,44,88,0.35)] transition duration-300 group-hover:-translate-y-0.5">
             <div className="bg-forest px-3 py-1 text-center text-[10px] font-semibold tracking-[0.22em] text-white uppercase">
               Re-Elect
             </div>
@@ -96,9 +96,7 @@ export function SiteHeader() {
           <div className="ml-3 flex items-center gap-2 border-l border-white/20 pl-4">
             <SocialLinks />
             <a
-              href={site.donateUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/donate"
               className="ml-2 bg-gold px-4 py-2 text-xs font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
             >
               Donate
@@ -160,9 +158,7 @@ export function SiteHeader() {
               ),
             )}
             <a
-              href={site.donateUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/donate"
               className="mt-3 bg-gold px-4 py-3 text-center text-sm font-bold tracking-[0.14em] text-navy-deep uppercase"
             >
               Donate

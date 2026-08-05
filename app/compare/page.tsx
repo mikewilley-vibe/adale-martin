@@ -184,7 +184,7 @@ export default function ComparePage() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href={site.donateUrl} variant="gold" external>
+              <ButtonLink href="/donate" variant="gold">
                 Donate
               </ButtonLink>
               <Link

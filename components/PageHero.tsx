@@ -13,7 +13,7 @@ export function PageHero({ eyebrow, title, lead }: PageHeroProps) {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 70% 80% at 85% 20%, rgba(201,162,39,0.22), transparent 55%), radial-gradient(ellipse 50% 60% at 0% 100%, rgba(31,77,58,0.5), transparent 50%)",
+            "radial-gradient(ellipse 70% 80% at 85% 20%, rgba(132,189,0,0.28), transparent 55%), radial-gradient(ellipse 50% 60% at 0% 100%, rgba(0,54,108,0.55), transparent 50%)",
         }}
       />
       <div
@@ -51,9 +51,7 @@ export function CtaRow() {
   return (
     <div className="flex flex-wrap gap-3">
       <a
-        href="https://www.rally.org/adalemartin"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/donate"
         className="bg-gold px-6 py-3 text-sm font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
       >
         Donate

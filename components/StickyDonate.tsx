@@ -1,6 +1,4 @@
-"use client";
-
-import { site } from "@/lib/content";
+import Link from "next/link";
 
 export function StickyDonate() {
   return (
@@ -9,14 +7,12 @@ export function StickyDonate() {
         <p className="text-xs leading-snug text-white/80">
           Re-elect Adale · Kids first
         </p>
-        <a
-          href={site.donateUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/donate"
           className="shrink-0 bg-gold px-4 py-2.5 text-xs font-bold tracking-[0.14em] text-navy-deep uppercase"
         >
           Donate
-        </a>
+        </Link>
       </div>
     </div>
   );

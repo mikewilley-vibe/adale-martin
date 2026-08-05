@@ -51,7 +51,7 @@ export default function GetInvolvedPage() {
         </div>
         <Reveal delay={200}>
           <div className="mt-10">
-            <ButtonLink href={site.donateUrl} variant="gold" external>
+            <ButtonLink href="/donate" variant="gold">
               Donate now
             </ButtonLink>
           </div>

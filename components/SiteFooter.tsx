@@ -38,9 +38,7 @@ export function SiteFooter() {
           <p className="mt-3 text-sm text-white/75">{site.address}</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a
-              href={site.donateUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/donate"
               className="inline-block bg-gold px-5 py-2.5 text-xs font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
             >
               Donate

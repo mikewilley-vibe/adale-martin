@@ -44,7 +44,7 @@ export default function AboutPage() {
         </aside>
 
         <Reveal delay={80}>
-          <article className="bg-white/70 px-6 py-8 shadow-[0_20px_60px_rgba(10,35,66,0.06)] md:px-10 md:py-12">
+          <article className="bg-white/70 px-6 py-8 shadow-[0_20px_60px_rgba(0,54,108,0.08)] md:px-10 md:py-12">
             <Prose>
               {aboutParagraphs.map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>
