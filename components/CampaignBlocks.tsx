@@ -9,7 +9,7 @@ export function RecordStrip() {
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:grid-cols-2 md:grid-cols-4 md:px-8 md:py-16">
         {recordStats.map((stat, i) => (
           <Reveal key={stat.label} delay={i * 70}>
-            <p className="font-[family-name:var(--font-fraunces)] text-4xl font-semibold text-gold-bright md:text-5xl">
+            <p className="font-[family-name:var(--font-baskerville)] text-4xl font-semibold text-gold-bright md:text-5xl">
               {stat.value}
             </p>
             <p className="mt-2 text-sm tracking-wide text-white/70">
@@ -38,7 +38,7 @@ export function VoteBanner() {
               <p className="text-[11px] font-semibold tracking-[0.16em] text-muted uppercase">
                 Early voting
               </p>
-              <p className="mt-1 font-[family-name:var(--font-fraunces)] text-lg text-navy">
+              <p className="mt-1 font-[family-name:var(--font-baskerville)] text-lg text-navy">
                 Sept 18 – Oct 31
               </p>
             </div>
@@ -46,7 +46,7 @@ export function VoteBanner() {
               <p className="text-[11px] font-semibold tracking-[0.16em] text-gold uppercase">
                 Election Day
               </p>
-              <p className="mt-1 font-[family-name:var(--font-fraunces)] text-lg">
+              <p className="mt-1 font-[family-name:var(--font-baskerville)] text-lg">
                 November 8
               </p>
             </div>

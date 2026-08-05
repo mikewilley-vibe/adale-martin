@@ -70,7 +70,7 @@ export default function MediaPage() {
             <Eyebrow tone="white">Press contact</Eyebrow>
             <a
               href={`mailto:${site.email}`}
-              className="mt-3 block font-[family-name:var(--font-fraunces)] text-2xl transition hover:text-gold-bright md:text-3xl"
+              className="mt-3 block font-[family-name:var(--font-baskerville)] text-2xl transition hover:text-gold-bright md:text-3xl"
             >
               {site.email}
             </a>

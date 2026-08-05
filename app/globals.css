@@ -33,9 +33,9 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-paper: var(--paper);
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-baskerville);
   --font-sans: var(--font-source-sans);
-  --font-serif: var(--font-source-serif);
+  --font-serif: var(--font-baskerville);
 }
 
 @layer base {
@@ -84,11 +84,11 @@
   }
 
   .font-display {
-    font-family: var(--font-fraunces), Georgia, serif;
+    font-family: var(--font-baskerville), Georgia, "Times New Roman", serif;
   }
 
   .font-serif {
-    font-family: var(--font-source-serif), Georgia, serif;
+    font-family: var(--font-baskerville), Georgia, "Times New Roman", serif;
   }
 }
 

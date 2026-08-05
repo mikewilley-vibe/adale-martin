@@ -49,7 +49,7 @@ export default function AboutPage() {
               {aboutParagraphs.map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>
               ))}
-              <p className="font-[family-name:var(--font-fraunces)] text-2xl leading-snug text-navy not-italic md:text-3xl">
+              <p className="font-[family-name:var(--font-baskerville)] text-2xl leading-snug text-navy not-italic md:text-3xl">
                 {aboutClosing}
               </p>
             </Prose>

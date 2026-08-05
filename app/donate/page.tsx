@@ -39,7 +39,7 @@ export default function DonatePage() {
                 key={item.amount}
                 className="flex items-baseline justify-between gap-6 py-4"
               >
-                <span className="font-[family-name:var(--font-fraunces)] text-xl text-navy">
+                <span className="font-[family-name:var(--font-baskerville)] text-xl text-navy">
                   {item.amount}
                 </span>
                 <span className="text-right text-muted">{item.label}</span>

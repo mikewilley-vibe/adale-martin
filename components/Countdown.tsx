@@ -71,7 +71,7 @@ export function Countdown({ variant = "banner" }: CountdownProps) {
         <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">
           Election Day
         </p>
-        <p className="mt-2 font-[family-name:var(--font-fraunces)] text-2xl md:text-3xl">
+        <p className="mt-2 font-[family-name:var(--font-baskerville)] text-2xl md:text-3xl">
           Today is the day — vote Adale Martin
         </p>
       </div>
@@ -104,7 +104,7 @@ export function Countdown({ variant = "banner" }: CountdownProps) {
             }
           >
             <p
-              className={`font-[family-name:var(--font-fraunces)] text-2xl font-semibold tabular-nums sm:text-3xl md:text-4xl ${
+              className={`font-[family-name:var(--font-baskerville)] text-2xl font-semibold tabular-nums sm:text-3xl md:text-4xl ${
                 isPanel ? "text-gold-bright" : "text-navy"
               }`}
             >

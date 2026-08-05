@@ -77,7 +77,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-5xl px-5 py-20 md:px-8 md:py-28">
         <Reveal>
           <Eyebrow>Adale’s Vision for NPS Students</Eyebrow>
-          <blockquote className="mt-6 font-[family-name:var(--font-source-serif)] text-2xl leading-snug text-ink md:text-4xl md:leading-[1.25]">
+          <blockquote className="mt-6 font-[family-name:var(--font-baskerville)] text-2xl leading-snug text-ink md:text-4xl md:leading-[1.25]">
             “I am committed to ensuring at least a{" "}
             <strong className="font-semibold text-navy">
               95% Graduation Rate
@@ -150,14 +150,14 @@ export default function HomePage() {
             Leadership rooted in Norfolk’s classrooms and community
           </Display>
           <p className="mt-5 text-lg leading-relaxed text-muted">
-            Elected in 2018 and Board Chair since 2020, Adale brings public
-            policy expertise, special-education advocacy, and daily community
-            service to the work of putting kids first.
+            Elected in 2018 and Board Chair during COVID for three terms, Adale
+            brings public policy expertise, special-education advocacy, and daily
+            community service to the work of putting kids first.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/about">Full bio</ButtonLink>
             <ButtonLink href="/compare" variant="ghost-dark">
-              Why Adale
+              Why Adale?
             </ButtonLink>
           </div>
         </Reveal>

@@ -43,7 +43,7 @@ export function DonateChooser() {
                   : "border border-navy/15 bg-sand/40 text-navy hover:bg-sand"
               }`}
             >
-              <span className="font-[family-name:var(--font-fraunces)] text-2xl font-semibold">
+              <span className="font-[family-name:var(--font-baskerville)] text-2xl font-semibold">
                 ${value}
               </span>
             </button>

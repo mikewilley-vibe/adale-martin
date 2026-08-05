@@ -34,7 +34,7 @@ export const nav = [
     ],
   },
   { label: "About Adale", href: "/about" },
-  { label: "Why Adale", href: "/compare" },
+  { label: "Why Adale?", href: "/compare" },
   { label: "What Parents Are Saying", href: "/parents" },
   { label: "Get Involved", href: "/get-involved" },
   { label: "Donate", href: "/donate" },
@@ -68,8 +68,8 @@ export const recordStats = [
     label: "Elected to NPS Board",
   },
   {
-    value: "Chair",
-    label: "Board Chair since 2020",
+    value: "3×",
+    label: "Board Chair during COVID",
   },
   {
     value: "95%",
@@ -85,7 +85,7 @@ export const vision =
   "I am committed to ensuring at least a 95% Graduation Rate for Norfolk Public School seniors so that they can have opportunities upon graduation, which means that they are prepared to be Enrolled, Employed, or Enlisted.";
 
 export const aboutParagraphs = [
-  "Dr. Adale Martin was elected to the Norfolk Public School Board in 2018. Dr. Martin served as the NPS Board Chairman from July 2020–present. She has a proven record of focusing on improving student academic outcomes, expanding security resources in schools, and supporting our amazing teachers and staff.",
+  "Dr. Adale Martin was elected to the Norfolk Public School Board in 2018. Dr. Martin was the NPS Board Chair during COVID for three terms. She has a proven record of focusing on improving student academic outcomes, expanding security resources in schools, and supporting our amazing teachers and staff.",
   "As a proud mother of two NPS students with special needs, Adale works with families to understand their rights when navigating the Individual Educational Plan (IEP) & 504 processes. She works to improve equitable access to available resources and services.",
   "Adale is passionate about education. She is a product of public education from Pre-K – Ph.D.! Adale earned her Doctoral degree from Old Dominion University’s School of Public Service in public policy with a specialization in collaboration and international security policy, a Master of Public Administration degree from Louisiana State University, and a bachelor’s degree from The Ohio State University in International and French Studies. Adale is also an alumnus of the University of Virginia’s Sorensen’s Political Leaders Program and currently serves as a class representative on the Sorensen’s Alumni Council.",
   "Dr. Martin’s professional career has been focused on adult education and training, curriculum development, and program management. She managed clinical and scientific oncologic programs at the American Society of Clinical Oncology and counter-terrorism training for first responders and SWAT Teams at the National Center for Biomedical Research and Training at Louisiana State University.",
@@ -107,7 +107,7 @@ export const goals = {
   safety: {
     title: "Safety & Security Resources in Our Schools",
     body: [
-      "I am a steadfast advocate for safety and security at NPS schools. I served as Chair of the NPS Board (2020–22) during the most demanding time in public education, confronting the impact of a global pandemic, including safely returning to in-person learning. During this time, NPS reached a 90% vaccination rate of our 5,033 employees and expanded resources to address social, emotional, and behavioral needs in schools. NPS also launched the Vector Alert Tip Reporting app that provides students, parents/guardians, and staff a safe way to report bullying and safety concerns anytime, anywhere, and on any device. I will continue to advocate for expanding security resource officers to all NPS schools, including elementary schools.",
+      "I am a steadfast advocate for safety and security at NPS schools. I was Chair of the NPS Board for three terms during COVID — the most demanding time in public education — confronting the impact of a global pandemic, including safely returning to in-person learning. During this time, NPS reached a 90% vaccination rate of our 5,033 employees and expanded resources to address social, emotional, and behavioral needs in schools. NPS also launched the Vector Alert Tip Reporting app that provides students, parents/guardians, and staff a safe way to report bullying and safety concerns anytime, anywhere, and on any device. I will continue to advocate for expanding security resource officers to all NPS schools, including elementary schools.",
       "Providing safe and secure learning environments at NPS schools is fundamental and requires an integrated effort by our city, state, and community partners to recognize, understand, and address risks in our community before they impact our schools. Overall, security begins with a culture of civility, trust, and dialogue with the broader community and city partners, of which we can each do our part.",
     ],
   },
@@ -171,15 +171,14 @@ export const testimonials = [
 
 /** Side-by-side facts drawn from each campaign’s public materials. */
 export const comparison = {
-  opponentName: "Josh Howell",
-  opponentSite: "https://howellfornorfolk.com/",
+  opponentName: "Challenger",
   intro:
     "Both candidates care about Norfolk. Only one has already led Norfolk Public Schools through the hardest years in a generation — and delivered results for students, families, and educators.",
   rows: [
     {
       category: "School Board Experience",
       adale:
-        "Elected to the Norfolk Public School Board in 2018. Served as Board Chair from July 2020–present — including through the COVID crisis, return to in-person learning, and post-pandemic recovery.",
+        "Elected to the Norfolk Public School Board in 2018. Was Board Chair during COVID for three terms — leading through the crisis, return to in-person learning, and post-pandemic recovery.",
       opponent:
         "No prior Norfolk School Board service. First-time candidate for this seat.",
       edge: "adale",
@@ -228,7 +227,7 @@ export const comparison = {
   closingPoints: [
     {
       title: "She’s already done the job",
-      body: "School board isn’t an entry-level role. Adale has chaired the board, made hard votes, and stayed focused on kids — not campaign slogans.",
+      body: "School board isn’t an entry-level role. Adale was Board Chair during COVID for three terms, made hard votes, and stayed focused on kids — not campaign slogans.",
     },
     {
       title: "Policy training meets classroom reality",

@@ -59,7 +59,7 @@ export default function ParentsPage() {
       <section className="bg-navy px-5 py-14 text-white md:px-8">
         <Reveal>
           <div className="mx-auto flex max-w-5xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="font-[family-name:var(--font-fraunces)] text-2xl md:text-3xl">
+            <p className="font-[family-name:var(--font-baskerville)] text-2xl md:text-3xl">
               Please bother me.
             </p>
             <a

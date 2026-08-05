@@ -27,10 +27,10 @@ export function SiteHeader() {
               Re-Elect
             </div>
             <div className="bg-navy px-4 py-2.5 text-center">
-              <div className="font-[family-name:var(--font-fraunces)] text-xl leading-none font-semibold tracking-wide text-gold-bright md:text-2xl">
+              <div className="font-[family-name:var(--font-baskerville)] text-xl leading-none font-semibold tracking-wide text-gold-bright md:text-2xl">
                 ADALE
               </div>
-              <div className="font-[family-name:var(--font-fraunces)] text-2xl leading-none font-bold tracking-wide text-white md:text-3xl">
+              <div className="font-[family-name:var(--font-baskerville)] text-2xl leading-none font-bold tracking-wide text-white md:text-3xl">
                 MARTIN
               </div>
             </div>
@@ -49,23 +49,46 @@ export function SiteHeader() {
           <nav className="flex items-center gap-1" aria-label="Primary">
             {nav.map((item) =>
               "children" in item ? (
-                <div key={item.label} className="relative group/nav">
+                <div
+                  key={item.label}
+                  className="relative"
+                  onMouseEnter={() => setGoalsOpen(true)}
+                  onMouseLeave={() => setGoalsOpen(false)}
+                >
                   <button
                     type="button"
-                    className={`px-3 py-2 text-sm font-medium tracking-wide transition ${
+                    className={`inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium tracking-wide transition ${
                       item.children.some((c) => isActive(c.href))
                         ? "text-gold-bright"
                         : "text-white/90 hover:text-white"
                     }`}
-                    aria-expanded="false"
+                    aria-expanded={goalsOpen}
+                    aria-haspopup="menu"
+                    onClick={() => setGoalsOpen((v) => !v)}
                   >
                     {item.label}
+                    <span
+                      className={`text-[10px] transition ${goalsOpen ? "rotate-180" : ""}`}
+                      aria-hidden
+                    >
+                      ▾
+                    </span>
                   </button>
-                  <div className="invisible absolute top-full left-0 z-20 min-w-[240px] translate-y-1 border border-white/10 bg-navy-deep/95 opacity-0 shadow-xl backdrop-blur-md transition group-hover/nav:visible group-hover/nav:translate-y-0 group-hover/nav:opacity-100">
+                  <div
+                    role="menu"
+                    className={`absolute top-full left-0 z-[60] min-w-[260px] border border-white/10 bg-navy-deep pt-1 shadow-xl transition ${
+                      goalsOpen
+                        ? "visible translate-y-0 opacity-100"
+                        : "invisible pointer-events-none translate-y-1 opacity-0"
+                    }`}
+                  >
+                    {/* Hover bridge so the menu stays open when moving from trigger → panel */}
+                    <div className="absolute -top-2 right-0 left-0 h-2" aria-hidden />
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
+                        role="menuitem"
                         className={`block px-4 py-3 text-sm transition hover:bg-white/5 ${
                           isActive(child.href)
                             ? "text-gold-bright"

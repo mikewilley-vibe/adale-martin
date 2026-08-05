@@ -35,7 +35,7 @@ export function Display({
 }) {
   return (
     <Tag
-      className={`font-[family-name:var(--font-fraunces)] text-balance ${className}`}
+      className={`font-[family-name:var(--font-baskerville)] text-balance ${className}`}
     >
       {children}
     </Tag>
@@ -44,7 +44,7 @@ export function Display({
 
 export function Prose({ children }: { children: ReactNode }) {
   return (
-    <div className="space-y-6 font-[family-name:var(--font-source-serif)] text-lg leading-relaxed text-ink/90">
+    <div className="space-y-6 font-[family-name:var(--font-baskerville)] text-lg leading-relaxed text-ink/90">
       {children}
     </div>
   );
@@ -126,7 +126,7 @@ export function Quote({
   return (
     <figure>
       <blockquote
-        className={`font-[family-name:var(--font-source-serif)] leading-relaxed text-ink italic ${
+        className={`font-[family-name:var(--font-baskerville)] leading-relaxed text-ink italic ${
           large
             ? "text-xl md:text-2xl md:leading-snug"
             : "text-lg md:text-xl"

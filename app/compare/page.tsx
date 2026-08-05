@@ -4,12 +4,12 @@ import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { ButtonLink, Display, Eyebrow } from "@/components/ui";
-import { comparison, site } from "@/lib/content";
+import { comparison } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Why Adale",
+  title: "Why Adale?",
   description:
-    "Compare Dr. Adale Martin’s school board record, education, and community leadership with challenger Josh Howell.",
+    "Compare Dr. Adale Martin’s school board record, education, and community leadership with the challenger.",
 };
 
 export default function ComparePage() {
@@ -17,7 +17,7 @@ export default function ComparePage() {
     <>
       <PageHero
         eyebrow="The Choice for Ward 1"
-        title="Why Adale"
+        title="Why Adale?"
         lead={comparison.intro}
       />
 
@@ -40,9 +40,9 @@ export default function ComparePage() {
             Experience, advocacy, and results — already on the job
           </Display>
           <p className="mt-5 text-lg leading-relaxed text-muted">
-            Adale isn’t asking for a chance to learn the role. She’s the Board
-            Chair, a special-education parent, and a proven advocate for Norfolk
-            Public School students.
+            Adale isn’t asking for a chance to learn the role. She was the Board
+            Chair during COVID for three terms, a special-education parent, and a
+            proven advocate for Norfolk Public School students.
           </p>
         </Reveal>
       </section>
@@ -58,28 +58,21 @@ export default function ComparePage() {
                 Dr. Adale Martin
               </Display>
               <p className="mt-3 text-white/75">
-                Incumbent · Board Chair · Proven record for NPS students
+                Incumbent · Board Chair during COVID (3 terms) · Proven record
+                for NPS students
               </p>
             </div>
           </Reveal>
           <Reveal delay={80}>
             <div className="bg-sand-deep/40 px-5 py-10 md:px-10 md:py-12">
               <p className="text-xs font-semibold tracking-[0.2em] text-muted uppercase">
-                Challenger
+                Also on the ballot
               </p>
               <Display as="h2" className="mt-2 text-3xl text-navy/70 md:text-4xl">
-                {comparison.opponentName}
+                Challenger
               </Display>
               <p className="mt-3 text-muted">
-                First-time school board candidate ·{" "}
-                <a
-                  href={comparison.opponentSite}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline underline-offset-2 hover:text-navy"
-                >
-                  howellfornorfolk.com
-                </a>
+                First-time school board candidate
               </p>
             </div>
           </Reveal>
@@ -94,16 +87,7 @@ export default function ComparePage() {
           </Display>
           <p className="mt-4 max-w-2xl text-muted">
             Facts below are drawn from each campaign’s own public materials —
-            Adale’s bio and record, and{" "}
-            <a
-              href={comparison.opponentSite}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-navy"
-            >
-              Josh Howell’s campaign site
-            </a>
-            .
+            Adale’s bio and record alongside the challenger’s published platform.
           </p>
         </Reveal>
 
@@ -125,7 +109,7 @@ export default function ComparePage() {
                     <p className="text-[11px] font-bold tracking-[0.16em] text-gold uppercase">
                       Adale Martin
                     </p>
-                    <p className="mt-3 font-[family-name:var(--font-source-serif)] text-base leading-relaxed text-ink md:text-lg">
+                    <p className="mt-3 font-[family-name:var(--font-baskerville)] text-base leading-relaxed text-ink md:text-lg">
                       {row.adale}
                     </p>
                   </div>
@@ -133,7 +117,7 @@ export default function ComparePage() {
                     <p className="text-[11px] font-bold tracking-[0.16em] text-muted uppercase">
                       {comparison.opponentName}
                     </p>
-                    <p className="mt-3 font-[family-name:var(--font-source-serif)] text-base leading-relaxed text-muted md:text-lg">
+                    <p className="mt-3 font-[family-name:var(--font-baskerville)] text-base leading-relaxed text-muted md:text-lg">
                       {row.opponent}
                     </p>
                   </div>

@@ -63,7 +63,7 @@ export function GoalPage({
         </Reveal>
         {highlight && (
           <Reveal delay={60}>
-            <p className="mb-10 border-l-4 border-gold bg-white/55 py-4 pl-5 font-[family-name:var(--font-fraunces)] text-xl leading-snug text-navy md:text-2xl">
+            <p className="mb-10 border-l-4 border-gold bg-white/55 py-4 pl-5 font-[family-name:var(--font-baskerville)] text-xl leading-snug text-navy md:text-2xl">
               {highlight}
             </p>
           </Reveal>

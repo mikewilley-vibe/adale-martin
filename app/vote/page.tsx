@@ -101,7 +101,7 @@ export default function VotePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/get-involved">Get involved</ButtonLink>
               <ButtonLink href="/compare" variant="ghost-dark">
-                Why Adale
+                Why Adale?
               </ButtonLink>
               <Link
                 href="/parents"
@@ -117,7 +117,7 @@ export default function VotePage() {
       <section className="bg-forest px-5 py-14 text-white md:px-8">
         <Reveal>
           <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="font-[family-name:var(--font-fraunces)] text-2xl md:text-3xl">
+            <p className="font-[family-name:var(--font-baskerville)] text-2xl md:text-3xl">
               Questions about voting in Ward 1?
             </p>
             <a
