@@ -133,12 +133,6 @@ export const parentsIntro = {
 export const testimonials = [
   {
     quote:
-      "I have known Adale for 14 years. Adale Martin is focused on helping students. She remains focused on making decisions that improve the trajectory for our kids. On November 8th I’m voting to re-elect Adale Martin and you should too.",
-    name: "Paula Adams",
-    role: "Norfolk Parent",
-  },
-  {
-    quote:
       "When we were dealing with the schools, we felt powerless. The first person that I thought to call was Adale; not just because we were friends, but because I knew she would help our family.",
     name: "Steve Housh",
     role: "Parent of 5 NPS students",
