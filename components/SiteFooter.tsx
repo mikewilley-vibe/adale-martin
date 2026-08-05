@@ -37,12 +37,14 @@ export function SiteFooter() {
           </p>
           <p className="mt-3 text-sm text-white/75">{site.address}</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <a
-              href="/donate"
-              className="inline-block bg-gold px-5 py-2.5 text-xs font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
-            >
-              Donate
-            </a>
+            {site.donateEnabled && (
+              <a
+                href="/donate"
+                className="inline-block bg-gold px-5 py-2.5 text-xs font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
+              >
+                Donate
+              </a>
+            )}
             <a
               href="/get-involved"
               className="inline-block border border-white/25 px-5 py-2.5 text-xs font-bold tracking-[0.14em] uppercase transition hover:bg-white/10"

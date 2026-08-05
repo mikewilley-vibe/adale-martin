@@ -44,11 +44,14 @@ export default function RootLayout({
           Skip to content
         </a>
         <SiteHeader />
-        <main id="main" className="flex-1 pb-16 md:pb-0">
+        <main
+          id="main"
+          className={`flex-1 ${site.donateEnabled ? "pb-16 md:pb-0" : ""}`}
+        >
           {children}
         </main>
         <SiteFooter />
-        <StickyDonate />
+        {site.donateEnabled ? <StickyDonate /> : null}
       </body>
     </html>
   );

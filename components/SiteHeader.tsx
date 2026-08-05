@@ -118,12 +118,14 @@ export function SiteHeader() {
 
           <div className="ml-3 flex items-center gap-2 border-l border-white/20 pl-4">
             <SocialLinks />
-            <a
-              href="/donate"
-              className="ml-2 bg-gold px-4 py-2 text-xs font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
-            >
-              Donate
-            </a>
+            {site.donateEnabled && (
+              <a
+                href="/donate"
+                className="ml-2 bg-gold px-4 py-2 text-xs font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
+              >
+                Donate
+              </a>
+            )}
           </div>
         </div>
 
@@ -180,12 +182,14 @@ export function SiteHeader() {
                 </Link>
               ),
             )}
-            <a
-              href="/donate"
-              className="mt-3 bg-gold px-4 py-3 text-center text-sm font-bold tracking-[0.14em] text-navy-deep uppercase"
-            >
-              Donate
-            </a>
+            {site.donateEnabled && (
+              <a
+                href="/donate"
+                className="mt-3 bg-gold px-4 py-3 text-center text-sm font-bold tracking-[0.14em] text-navy-deep uppercase"
+              >
+                Donate
+              </a>
+            )}
             <div className="mt-4 flex gap-4">
               <SocialLinks />
             </div>

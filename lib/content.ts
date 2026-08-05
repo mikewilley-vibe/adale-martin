@@ -10,6 +10,8 @@ export const site = {
   donateUrl: "https://www.rally.org/adalemartin",
   /** Paste Donorbox campaign URL when ready — overrides Rally for CTAs. */
   donorboxUrl: "",
+  /** Flip to true when Donorbox is live. Hides donate CTAs and checkout until then. */
+  donateEnabled: false,
   earlyVoting: "Early voting is September 18 – October 31",
   earlyVotingStart: "September 18",
   earlyVotingEnd: "October 31",
@@ -37,7 +39,7 @@ export const nav = [
   { label: "Why Adale?", href: "/compare" },
   { label: "What Parents Are Saying", href: "/parents" },
   { label: "Get Involved", href: "/get-involved" },
-  { label: "Donate", href: "/donate" },
+  // { label: "Donate", href: "/donate" }, // restore when site.donateEnabled
   { label: "Vote", href: "/vote" },
 ] as const;
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { InvolveForm } from "@/components/InvolveForm";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
-import { ButtonLink, Display, Eyebrow } from "@/components/ui";
+import { Display, Eyebrow } from "@/components/ui";
 import { site } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -21,8 +21,8 @@ const paths = [
     body: "Canvass, phone bank, or help on Election Day. Local races are won by people who show up.",
   },
   {
-    title: "Donate what you can",
-    body: "Even small gifts fund signs, literature, and outreach across Ward 1.",
+    title: "Join the email list",
+    body: "Stay in the loop on early voting, events, and how to help across Ward 1.",
   },
 ] as const;
 
@@ -32,7 +32,7 @@ export default function GetInvolvedPage() {
       <PageHero
         eyebrow="Join the Campaign"
         title="Get Involved"
-        lead="Local elections are won by neighbors. Request a sign, volunteer an hour, or chip in — every action counts."
+        lead="Local elections are won by neighbors. Request a sign or volunteer an hour — every action counts."
       />
 
       <section className="mx-auto max-w-7xl px-5 py-14 md:px-8 md:py-20">
@@ -49,13 +49,6 @@ export default function GetInvolvedPage() {
             </Reveal>
           ))}
         </div>
-        <Reveal delay={200}>
-          <div className="mt-10">
-            <ButtonLink href="/donate" variant="gold">
-              Donate now
-            </ButtonLink>
-          </div>
-        </Reveal>
       </section>
 
       <section className="border-y border-navy/8 bg-white/55">

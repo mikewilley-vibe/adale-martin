@@ -171,15 +171,12 @@ export default function HomePage() {
                 Host a sign. Make a difference.
               </Display>
               <p className="mt-3 max-w-xl text-white/75">
-                Help put kids first across Ward 1 — donate, volunteer, or reach
-                Adale directly at {site.phone}.
+                Help put kids first across Ward 1 — volunteer, host a sign, or
+                reach Adale directly at {site.phone}.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href="/donate" variant="gold">
-                Donate
-              </ButtonLink>
-              <ButtonLink href="/get-involved" variant="ghost">
+              <ButtonLink href="/get-involved" variant="gold">
                 Get Involved
               </ButtonLink>
               <a

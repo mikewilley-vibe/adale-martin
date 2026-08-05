@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { site } from "@/lib/content";
 
 export function StickyDonate() {
+  if (!site.donateEnabled) return null;
+
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-navy/10 bg-navy/95 px-4 py-3 backdrop-blur md:hidden">
       <div className="mx-auto flex max-w-lg items-center justify-between gap-3">

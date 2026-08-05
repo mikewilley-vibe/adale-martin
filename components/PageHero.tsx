@@ -51,10 +51,10 @@ export function CtaRow() {
   return (
     <div className="flex flex-wrap gap-3">
       <a
-        href="/donate"
+        href="/get-involved"
         className="bg-gold px-6 py-3 text-sm font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright"
       >
-        Donate
+        Get Involved
       </a>
       <a
         href="mailto:adale.martin4NPS@gmail.com?subject=Volunteer"

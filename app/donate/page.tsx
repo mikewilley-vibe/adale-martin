@@ -3,7 +3,7 @@ import Link from "next/link";
 import { DonateChooser } from "@/components/DonateChooser";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
-import { Display, Eyebrow } from "@/components/ui";
+import { ButtonLink, Display, Eyebrow } from "@/components/ui";
 import { donateImpacts, site } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -13,6 +13,44 @@ export const metadata: Metadata = {
 };
 
 export default function DonatePage() {
+  if (!site.donateEnabled) {
+    return (
+      <>
+        <PageHero
+          eyebrow="Friends of Adale Martin"
+          title="Donate"
+          lead="Online giving will be back soon — we’re finishing setup. In the meantime, volunteer or request a yard sign."
+        />
+        <section className="mx-auto max-w-3xl px-5 py-16 text-center md:px-8 md:py-24">
+          <Reveal>
+            <Eyebrow>Coming soon</Eyebrow>
+            <Display as="h2" className="mt-3 text-3xl text-navy md:text-4xl">
+              Donation checkout is temporarily offline
+            </Display>
+            <p className="mt-5 text-lg leading-relaxed text-muted">
+              Questions about supporting the campaign? Email{" "}
+              <a
+                href={`mailto:${site.email}`}
+                className="font-semibold text-forest underline-offset-2 hover:underline"
+              >
+                {site.email}
+              </a>{" "}
+              or get involved on the ground.
+            </p>
+            <div className="mt-10 flex flex-wrap justify-center gap-3">
+              <ButtonLink href="/get-involved" variant="gold">
+                Get Involved
+              </ButtonLink>
+              <ButtonLink href="/" variant="ghost-dark">
+                Back home
+              </ButtonLink>
+            </div>
+          </Reveal>
+        </section>
+      </>
+    );
+  }
+
   return (
     <>
       <PageHero
@@ -60,10 +98,6 @@ export default function DonatePage() {
 
         <Reveal delay={100}>
           <DonateChooser />
-          {/* Donorbox embed drops here later:
-              <script src="https://donorbox.org/widget.js" …></script>
-              <iframe src="https://donorbox.org/embed/…" …></iframe>
-          */}
           <p className="mt-6 text-center text-sm text-muted">
             Prefer to volunteer instead?{" "}
             <Link
