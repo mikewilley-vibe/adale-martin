@@ -9,7 +9,7 @@ import { comparison } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Why Adale?",
   description:
-    "Compare Dr. Adale Martin’s school board record, education, and community leadership with the challenger.",
+    "Dr. Adale Martin’s school board record, education, and community leadership for Norfolk Public Schools, Ward 1.",
 };
 
 export default function ComparePage() {
@@ -47,81 +47,49 @@ export default function ComparePage() {
         </Reveal>
       </section>
 
-      <section className="border-b border-navy/10 bg-white/60">
-        <div className="mx-auto grid max-w-7xl md:grid-cols-2">
-          <Reveal>
-            <div className="border-b border-navy/10 bg-navy px-5 py-10 text-white md:border-r md:border-b-0 md:px-10 md:py-12">
-              <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">
-                Re-Elect
-              </p>
-              <Display as="h2" className="mt-2 text-3xl md:text-4xl">
-                Dr. Adale Martin
-              </Display>
-              <p className="mt-3 text-white/75">
-                Incumbent · Board Chair during COVID (3 terms) · Proven record
-                for NPS students
-              </p>
-            </div>
-          </Reveal>
-          <Reveal delay={80}>
-            <div className="bg-sand-deep/40 px-5 py-10 md:px-10 md:py-12">
-              <p className="text-xs font-semibold tracking-[0.2em] text-muted uppercase">
-                Also on the ballot
-              </p>
-              <Display as="h2" className="mt-2 text-3xl text-navy/70 md:text-4xl">
-                Challenger
-              </Display>
-              <p className="mt-3 text-muted">
-                First-time school board candidate
-              </p>
-            </div>
-          </Reveal>
-        </div>
+      <section className="border-y border-navy/10 bg-navy px-5 py-10 text-white md:px-8 md:py-12">
+        <Reveal>
+          <div className="mx-auto max-w-7xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">
+              Re-Elect
+            </p>
+            <Display as="h2" className="mt-2 text-3xl md:text-4xl">
+              Dr. Adale Martin
+            </Display>
+            <p className="mt-3 max-w-2xl text-white/75">
+              Incumbent · Board Chair during COVID (3 terms) · Proven record for
+              NPS students
+            </p>
+          </div>
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-14 md:px-8 md:py-20">
         <Reveal>
-          <Eyebrow>Side by side</Eyebrow>
+          <Eyebrow>Her record</Eyebrow>
           <Display as="h2" className="mt-3 text-3xl text-navy md:text-4xl">
             Qualifications that matter for this seat
           </Display>
           <p className="mt-4 max-w-2xl text-muted">
-            Facts below are drawn from each campaign’s own public materials —
-            Adale’s bio and record alongside the challenger’s published platform.
+            Facts below are drawn from Adale’s public bio, board service, and
+            community leadership.
           </p>
         </Reveal>
 
         <div className="mt-12 space-y-4">
           {comparison.rows.map((row, i) => (
             <Reveal key={row.category} delay={(i % 3) * 50}>
-              <article className="overflow-hidden border border-navy/10 bg-white/70">
-                <div className="border-b border-navy/10 bg-sand/80 px-5 py-3 md:px-6">
-                  <h3 className="text-xs font-bold tracking-[0.18em] text-forest uppercase">
-                    {row.category}
-                  </h3>
-                </div>
-                <div className="grid md:grid-cols-2">
-                  <div className="relative border-b border-navy/10 px-5 py-6 md:border-r md:border-b-0 md:px-6 md:py-8">
-                    <span
-                      className="absolute top-0 left-0 h-full w-1 bg-gold"
-                      aria-hidden
-                    />
-                    <p className="text-[11px] font-bold tracking-[0.16em] text-gold uppercase">
-                      Adale Martin
-                    </p>
-                    <p className="mt-3 font-[family-name:var(--font-baskerville)] text-base leading-relaxed text-ink md:text-lg">
-                      {row.adale}
-                    </p>
-                  </div>
-                  <div className="px-5 py-6 md:px-6 md:py-8">
-                    <p className="text-[11px] font-bold tracking-[0.16em] text-muted uppercase">
-                      {comparison.opponentName}
-                    </p>
-                    <p className="mt-3 font-[family-name:var(--font-baskerville)] text-base leading-relaxed text-muted md:text-lg">
-                      {row.opponent}
-                    </p>
-                  </div>
-                </div>
+              <article className="relative overflow-hidden border border-navy/10 bg-white/70 px-5 py-6 md:px-8 md:py-8">
+                <span
+                  className="absolute top-0 left-0 h-full w-1 bg-gold"
+                  aria-hidden
+                />
+                <h3 className="text-xs font-bold tracking-[0.18em] text-forest uppercase">
+                  {row.category}
+                </h3>
+                <p className="mt-3 font-[family-name:var(--font-baskerville)] text-base leading-relaxed text-ink md:text-lg">
+                  {row.body}
+                </p>
               </article>
             </Reveal>
           ))}

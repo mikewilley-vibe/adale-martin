@@ -171,59 +171,34 @@ export const testimonials = [
   },
 ] as const;
 
-/** Side-by-side facts drawn from each campaign’s public materials. */
+/** Why Adale — credentials and record (no opponent references). */
 export const comparison = {
-  opponentName: "Challenger",
   intro:
-    "Both candidates care about Norfolk. Only one has already led Norfolk Public Schools through the hardest years in a generation — and delivered results for students, families, and educators.",
+    "Adale has already led Norfolk Public Schools through the hardest years in a generation — and delivered results for students, families, and educators.",
   rows: [
     {
       category: "School Board Experience",
-      adale:
-        "Elected to the Norfolk Public School Board in 2018. Was Board Chair during COVID for three terms — leading through the crisis, return to in-person learning, and post-pandemic recovery.",
-      opponent:
-        "No prior Norfolk School Board service. First-time candidate for this seat.",
-      edge: "adale",
+      body: "Elected to the Norfolk Public School Board in 2018. Was Board Chair during COVID for three terms — leading through the crisis, return to in-person learning, and post-pandemic recovery.",
     },
     {
       category: "Proven Record on NPS",
-      adale:
-        "Focused board leadership on academic outcomes, expanded school security resources, and educator support. Guided NPS through pandemic response (including ~90% staff vaccination), summer remediation, early literacy supports, and workforce investments — with English and Math performance rising from pre-pandemic levels.",
-      opponent:
-        "Campaign platform emphasizes integrity, transparency, and energy. No governing record on the NPS Board to point to yet.",
-      edge: "adale",
+      body: "Focused board leadership on academic outcomes, expanded school security resources, and educator support. Guided NPS through pandemic response (including ~90% staff vaccination), summer remediation, early literacy supports, and workforce investments — with English and Math performance rising from pre-pandemic levels.",
     },
     {
       category: "Parent Perspective",
-      adale:
-        "Mother of two NPS students with special needs. Helps families navigate IEP and 504 processes and fights for equitable access to services — the daily reality of public-school parenting at its hardest.",
-      opponent:
-        "Parent raising a son in Norfolk. Valuable — but without the published record of special-education advocacy Adale brings to the board table.",
-      edge: "adale",
+      body: "Mother of two NPS students with special needs. Helps families navigate IEP and 504 processes and fights for equitable access to services — the daily reality of public-school parenting at its hardest.",
     },
     {
       category: "Education & Training for Governance",
-      adale:
-        "Product of public education Pre-K through Ph.D. Doctorate in public policy (ODU School of Public Service); MPA (LSU); BA (Ohio State). Alumna of UVA’s Sorensen Political Leaders Program; class representative on the Sorensen Alumni Council.",
-      opponent:
-        "PhD in Higher Education Administration (ODU); graduate of Longwood and Old Dominion. Strong higher-ed credentials — oriented to colleges, not K–12 board governance.",
-      edge: "adale",
+      body: "Product of public education Pre-K through Ph.D. Doctorate in public policy (ODU School of Public Service); MPA (LSU); BA (Ohio State). Alumna of UVA’s Sorensen Political Leaders Program; class representative on the Sorensen Alumni Council.",
     },
     {
       category: "Professional Leadership",
-      adale:
-        "Career in adult education, curriculum development, and program management — including clinical/scientific programs at the American Society of Clinical Oncology and first-responder training at LSU’s National Center for Biomedical Research and Training. Currently Executive Director of the Slover Library Foundation.",
-      opponent:
-        "Coordinator of Accreditation and Compliance at Tidewater Community College; teaches graduate courses in higher education; board member of the Virginia Zoo.",
-      edge: "adale",
+      body: "Career in adult education, curriculum development, and program management — including clinical/scientific programs at the American Society of Clinical Oncology and first-responder training at LSU’s National Center for Biomedical Research and Training. Currently Executive Director of the Slover Library Foundation.",
     },
     {
       category: "Norfolk Community Service",
-      adale:
-        "Liaison to the Norfolk Public Library Board of Trustees; CHKD advocate via Magnolia Circle of the King’s Daughters; Garden Club of Norfolk. Deep, day-to-day civic work in the city she serves.",
-      opponent:
-        "Virginia Zoo board service and longtime Norfolk residency. A thinner published civic footprint than Adale’s Norfolk institutions work.",
-      edge: "adale",
+      body: "Liaison to the Norfolk Public Library Board of Trustees; CHKD advocate via Magnolia Circle of the King’s Daughters; Garden Club of Norfolk. Deep, day-to-day civic work in the city she serves.",
     },
   ],
   closingPoints: [
@@ -233,7 +208,7 @@ export const comparison = {
     },
     {
       title: "Policy training meets classroom reality",
-      body: "A public-policy doctorate, an MPA, and special-education parenting give Adale the toolkit to govern a complex district — not just critique it from the outside.",
+      body: "A public-policy doctorate, an MPA, and special-education parenting give Adale the toolkit to govern a complex district with clarity and care.",
     },
     {
       title: "Parents trust her because she shows up",
