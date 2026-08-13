@@ -7,6 +7,13 @@ function activeDonateUrl() {
   return site.donorboxUrl.trim() || site.donateUrl;
 }
 
+function checkoutHref(base: string, amount: number | null, recurring: boolean) {
+  const url = new URL(base);
+  if (amount) url.searchParams.set("amount", String(amount));
+  if (recurring) url.searchParams.set("recurring", "true");
+  return url.toString();
+}
+
 export function DonateChooser() {
   const [amount, setAmount] = useState<number | "custom">(50);
   const [custom, setCustom] = useState("");
@@ -20,8 +27,7 @@ export function DonateChooser() {
     return amount;
   }, [amount, custom]);
 
-  const href = activeDonateUrl();
-  const usingDonorbox = Boolean(site.donorboxUrl.trim());
+  const href = checkoutHref(activeDonateUrl(), selectedAmount, recurring);
 
   return (
     <div className="bg-white/80 px-5 py-8 shadow-[0_20px_60px_rgba(0,54,108,0.08)] md:px-8 md:py-10">
@@ -90,7 +96,6 @@ export function DonateChooser() {
           className="accent-forest"
         />
         Make this a monthly gift
-        <span className="text-muted">(when Donorbox is live)</span>
       </label>
 
       <a
@@ -105,9 +110,7 @@ export function DonateChooser() {
       </a>
 
       <p className="mt-4 text-center text-xs leading-relaxed text-muted">
-        {usingDonorbox
-          ? "Secure checkout powered by Donorbox."
-          : "Secure checkout via Rally while Donorbox enrollment finishes. Your gift goes to Friends of Adale Martin."}
+        Secure checkout via ActBlue. Your gift goes to Friends of Adale Martin.
       </p>
     </div>
   );

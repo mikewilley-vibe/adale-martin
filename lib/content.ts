@@ -7,11 +7,11 @@ export const site = {
   address: "P.O. Box 3714, Norfolk VA 23514",
   committee: "Friends of Adale Martin",
   disclaimer: "Authorized and Paid for by Friends of Adale Martin",
-  donateUrl: "https://www.rally.org/adalemartin",
-  /** Paste Donorbox campaign URL when ready — overrides Rally for CTAs. */
+  donateUrl: "https://secure.actblue.com/donate/adalemartin",
+  /** Optional alternate processor URL — overrides donateUrl when set. */
   donorboxUrl: "",
-  /** Flip to true when Donorbox is live. Hides donate CTAs and checkout until then. */
-  donateEnabled: false,
+  /** Flip to false to hide donate CTAs sitewide. */
+  donateEnabled: true,
   earlyVoting: "Early voting is September 18 – October 31",
   earlyVotingStart: "September 18",
   earlyVotingEnd: "October 31",
@@ -39,7 +39,7 @@ export const nav = [
   { label: "Why Adale?", href: "/compare" },
   { label: "What Parents Are Saying", href: "/parents" },
   { label: "Get Involved", href: "/get-involved" },
-  // { label: "Donate", href: "/donate" }, // restore when site.donateEnabled
+  { label: "Donate", href: "/donate" },
   { label: "Vote", href: "/vote" },
 ] as const;
 

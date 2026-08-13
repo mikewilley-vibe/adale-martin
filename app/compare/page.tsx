@@ -131,13 +131,13 @@ export default function ComparePage() {
                 Re-elect the leader who already delivers
               </Display>
               <p className="mt-3 max-w-xl text-white/75">
-                Keep proven leadership on the Norfolk School Board. Volunteer or
-                share Adale’s record with a neighbor.
+                Keep proven leadership on the Norfolk School Board. Donate,
+                volunteer, or share Adale’s record with a neighbor.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href="/get-involved" variant="gold">
-                Get Involved
+              <ButtonLink href="/donate" variant="gold">
+                Donate
               </ButtonLink>
               <Link
                 href="/about"
