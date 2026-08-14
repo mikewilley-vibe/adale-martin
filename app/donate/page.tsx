@@ -117,7 +117,6 @@ export default function DonatePage() {
               <Display as="h2" className="text-2xl md:text-3xl">
                 {site.disclaimer}
               </Display>
-              <p className="mt-2 text-white/70">{site.address}</p>
             </div>
             <a
               href={`tel:${site.phone.replace(/-/g, "")}`}

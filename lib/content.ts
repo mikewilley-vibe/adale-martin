@@ -4,7 +4,6 @@ export const site = {
   tagline: "Kids First for a Better Norfolk",
   phone: "757-629-4575",
   email: "adale.martin4NPS@gmail.com",
-  address: "P.O. Box 3714, Norfolk VA 23514",
   committee: "Friends of Adale Martin",
   disclaimer: "Authorized and Paid for by Friends of Adale Martin",
   donateUrl: "https://secure.actblue.com/donate/adalemartin",

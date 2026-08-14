@@ -35,7 +35,6 @@ export function SiteFooter() {
           <p className="text-xs font-semibold tracking-[0.18em] text-white/50 uppercase">
             {site.committee}
           </p>
-          <p className="mt-3 text-sm text-white/75">{site.address}</p>
           <div className="mt-5 flex flex-wrap gap-3">
             {site.donateEnabled && (
               <a
