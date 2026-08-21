@@ -45,24 +45,30 @@ export default function HomePage() {
           }}
         />
 
-        <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-5 pb-16 md:justify-center md:px-8 md:pb-24 md:pt-40">
-          <div className="max-w-2xl">
-            <div className="fade-up">
-              <Eyebrow tone="white">Re-Elect · {site.office}</Eyebrow>
-            </div>
-            <Display
-              as="h1"
-              className="fade-up-delay-1 mt-4 text-[clamp(3.4rem,10vw,6.75rem)] leading-[0.92] font-semibold tracking-tight text-white"
-            >
-              Adale
-              <span className="block text-gold-bright">Martin</span>
-            </Display>
-            <p className="fade-up-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
-              {site.tagline}. A tenacious advocate for Norfolk Public School
-              students — and a parent who shows up.
-            </p>
-            <div className="fade-up-delay-3 mt-8">
-              <CtaRow />
+        <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col px-5 pt-5 pb-16 md:px-8 md:pt-6 md:pb-24">
+          <div
+            className="h-[9.75rem] shrink-0 sm:h-[11.25rem] md:h-[12.75rem]"
+            aria-hidden
+          />
+          <div className="flex flex-1 flex-col justify-end md:justify-center">
+            <div className="max-w-2xl">
+              <div className="fade-up">
+                <Eyebrow tone="white">Re-Elect · {site.office}</Eyebrow>
+              </div>
+              <Display
+                as="h1"
+                className="fade-up-delay-1 mt-4 text-[clamp(3.4rem,10vw,6.75rem)] leading-[0.92] font-semibold tracking-tight text-white"
+              >
+                Adale
+                <span className="block text-gold-bright">Martin</span>
+              </Display>
+              <p className="fade-up-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
+                {site.tagline}. A tenacious advocate for Norfolk Public School
+                students — and a parent who shows up.
+              </p>
+              <div className="fade-up-delay-3 mt-8">
+                <CtaRow />
+              </div>
             </div>
           </div>
         </div>
