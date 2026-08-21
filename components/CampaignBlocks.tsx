@@ -1,7 +1,7 @@
 import { Countdown } from "@/components/Countdown";
 import { Reveal } from "@/components/Reveal";
 import { Display } from "@/components/ui";
-import { recordStats } from "@/lib/content";
+import { recordStats, site } from "@/lib/content";
 
 export function RecordStrip() {
   return (
@@ -47,7 +47,7 @@ export function VoteBanner() {
                 Election Day
               </p>
               <p className="mt-1 font-[family-name:var(--font-baskerville)] text-lg">
-                November 8
+                {site.electionDay}
               </p>
             </div>
             <a

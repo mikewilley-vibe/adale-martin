@@ -21,6 +21,16 @@ export default function ComparePage() {
         lead={comparison.intro}
       />
 
+      <section className="border-b border-navy/8 bg-white/50">
+        <div className="mx-auto max-w-3xl px-5 py-12 md:px-8 md:py-16">
+          <Reveal>
+            <p className="text-lg leading-relaxed text-muted md:text-xl">
+              {comparison.addition}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 md:grid-cols-[0.85fr_1.15fr] md:gap-14 md:px-8 md:py-20">
         <Reveal>
           <div className="relative aspect-[3/4] overflow-hidden bg-navy">
@@ -41,8 +51,8 @@ export default function ComparePage() {
           </Display>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Adale isn’t asking for a chance to learn the role. She was the Board
-            Chair during COVID for three terms, a special-education parent, and a
-            proven advocate for Norfolk Public School students.
+            Chair during COVID for three terms, a parent of two public school
+            students, and a proven advocate for Norfolk Public School students.
           </p>
         </Reveal>
       </section>
@@ -56,9 +66,8 @@ export default function ComparePage() {
             <Display as="h2" className="mt-2 text-3xl md:text-4xl">
               Dr. Adale Martin
             </Display>
-            <p className="mt-3 max-w-2xl text-white/75">
-              Incumbent · Board Chair during COVID (3 terms) · Proven record for
-              NPS students
+            <p className="mt-3 max-w-2xl text-lg text-white/80 md:text-xl">
+              {comparison.recordHeading}
             </p>
           </div>
         </Reveal>
@@ -68,7 +77,7 @@ export default function ComparePage() {
         <Reveal>
           <Eyebrow>Her record</Eyebrow>
           <Display as="h2" className="mt-3 text-3xl text-navy md:text-4xl">
-            Qualifications that matter for this seat
+            Qualifications that Matter
           </Display>
           <p className="mt-4 max-w-2xl text-muted">
             Facts below are drawn from Adale’s public bio, board service, and

@@ -14,9 +14,9 @@ export const site = {
   earlyVoting: "Early voting is September 18 – October 31",
   earlyVotingStart: "September 18",
   earlyVotingEnd: "October 31",
-  electionDay: "November 8",
+  electionDay: "November 3",
   /** Local election day — countdown target (America/New_York). */
-  electionDayIso: "2026-11-08T07:00:00-05:00",
+  electionDayIso: "2026-11-03T07:00:00-05:00",
   social: {
     instagram: "http://www.instagram.com/adale_martin4NPS",
     facebook: "https://www.facebook.com/AdaleMartin4NPS/",
@@ -87,10 +87,10 @@ export const vision =
 
 export const aboutParagraphs = [
   "Dr. Adale Martin was elected to the Norfolk Public School Board in 2018. Dr. Martin was the NPS Board Chair during COVID for three terms. She has a proven record of focusing on improving student academic outcomes, expanding security resources in schools, and supporting our amazing teachers and staff.",
-  "As a proud mother of two NPS students with special needs, Adale works with families to understand their rights when navigating the Individual Educational Plan (IEP) & 504 processes. She works to improve equitable access to available resources and services.",
+  "As a proud mother of two students with accommodations, Adale works with families to understand their rights when navigating the Individual Educational Plan (IEP) & 504 processes. She works to improve equitable access to available resources and services.",
   "Adale is passionate about education. She is a product of public education from Pre-K – Ph.D.! Adale earned her Doctoral degree from Old Dominion University’s School of Public Service in public policy with a specialization in collaboration and international security policy, a Master of Public Administration degree from Louisiana State University, and a bachelor’s degree from The Ohio State University in International and French Studies. Adale is also an alumnus of the University of Virginia’s Sorensen’s Political Leaders Program and currently serves as a class representative on the Sorensen’s Alumni Council.",
   "Dr. Martin’s professional career has been focused on adult education and training, curriculum development, and program management. She managed clinical and scientific oncologic programs at the American Society of Clinical Oncology and counter-terrorism training for first responders and SWAT Teams at the National Center for Biomedical Research and Training at Louisiana State University.",
-  "Adale is passionate about serving our community, which is evident in the work that she does every day. She is the Executive Director of the Slover Library Foundation, where she oversees operations, development, events, community engagement and impact, marketing, and communications. Dr. Martin is a liaison to the Norfolk Public Library Board of Trustees, advocate, and fundraiser in support of CHKD as a member of the Magnolia Circle of the King’s Daughters, and a member of the Garden Club of Norfolk.",
+  "Adale is passionate about serving our community, which is evident in the work that she does every day. She is Principal of AM&Co. Strategies, LLC, and formerly Executive Director of the Slover Library Foundation, where she oversaw operations, development, events, community engagement and impact, marketing, and communications. Dr. Martin is a liaison to the Norfolk Public Library Board of Trustees, advocate, and fundraiser in support of CHKD as a member of the Magnolia Circle of the King’s Daughters, and a member of the Garden Club of Norfolk.",
 ];
 
 export const aboutClosing =
@@ -174,18 +174,21 @@ export const testimonials = [
 export const comparison = {
   intro:
     "Adale has already led Norfolk Public Schools through the hardest years in a generation — and delivered results for students, families, and educators.",
+  addition:
+    "As fluctuating enrollment patterns and shifting birth rates create new financial realities for Norfolk Public Schools, Ward 1 School Board Representative Dr. Adale Martin is leading the call for a transparent, community-centered response. Recognizing that school transitions can cause anxiety for families, Dr. Martin is actively advocating for enhanced multilingual communication and institutional clarity. To ease the uncertainty associated with shifting district structures, her re-election campaign is prioritizing unity throughout the community to support our students through this transition. She aims to eliminate the apprehension of changing schools by welcoming students and families into a cohesive and supportive new educational community.",
+  recordHeading: "Adale’s Record for Norfolk’s Schools",
   rows: [
     {
       category: "School Board Experience",
-      body: "Elected to the Norfolk Public School Board in 2018. Was Board Chair during COVID for three terms — leading through the crisis, return to in-person learning, and post-pandemic recovery.",
+      body: "Elected to the Norfolk Public School Board in 2018. Served as Board Chair during COVID for three terms — leading through the crisis & safely returning to in-person learning and post-pandemic recovery.",
     },
     {
       category: "Proven Record on NPS",
-      body: "Focused board leadership on academic outcomes, expanded school security resources, and educator support. Guided NPS through pandemic response (including ~90% staff vaccination), summer remediation, early literacy supports, and workforce investments — with English and Math performance rising from pre-pandemic levels.",
+      body: "Focused board leadership on academic outcomes, expanded school security resources, and educator support. Guided NPS through pandemic response, summer remediation, early literacy supports, and workforce investments — with English and Math performance rising from pre-pandemic levels.",
     },
     {
       category: "Parent Perspective",
-      body: "Mother of two NPS students with special needs. Helps families navigate IEP and 504 processes and fights for equitable access to services — the daily reality of public-school parenting at its hardest.",
+      body: "Mother of two public school students. Helps families navigate IEP and 504 processes and fights for equitable access to services — the daily reality of public-school parenting at its hardest.",
     },
     {
       category: "Education & Training for Governance",
@@ -193,7 +196,7 @@ export const comparison = {
     },
     {
       category: "Professional Leadership",
-      body: "Career in adult education, curriculum development, and program management — including clinical/scientific programs at the American Society of Clinical Oncology and first-responder training at LSU’s National Center for Biomedical Research and Training. Currently Executive Director of the Slover Library Foundation.",
+      body: "Career in adult education, curriculum development, and program management — including clinical/scientific programs at the American Society of Clinical Oncology and first-responder training at LSU’s National Center for Biomedical Research and Training. Formerly Executive Director of the Slover Library Foundation. Principal, AM&Co. Strategies, LLC.",
     },
     {
       category: "Norfolk Community Service",

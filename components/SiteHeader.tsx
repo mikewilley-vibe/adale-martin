@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -22,27 +23,14 @@ export function SiteHeader() {
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="mx-auto flex max-w-7xl items-start justify-between gap-6 px-5 py-5 md:px-8 md:py-6">
         <Link href="/" className="group shrink-0" aria-label="Home">
-          <div className="overflow-hidden border border-white/20 bg-navy shadow-[0_12px_40px_rgba(0,44,88,0.35)] transition duration-300 group-hover:-translate-y-0.5">
-            <div className="bg-forest px-3 py-1 text-center text-[10px] font-semibold tracking-[0.22em] text-white uppercase">
-              Re-Elect
-            </div>
-            <div className="bg-navy px-4 py-2.5 text-center">
-              <div className="font-[family-name:var(--font-baskerville)] text-xl leading-none font-semibold tracking-wide text-gold-bright md:text-2xl">
-                ADALE
-              </div>
-              <div className="font-[family-name:var(--font-baskerville)] text-2xl leading-none font-bold tracking-wide text-white md:text-3xl">
-                MARTIN
-              </div>
-            </div>
-            <div className="border-t border-white/10 bg-navy-deep px-3 py-2 text-center">
-              <div className="text-[10px] tracking-wide text-white/70 italic">
-                {site.office}
-              </div>
-              <div className="mt-0.5 text-[11px] font-medium text-gold-bright">
-                {site.tagline}
-              </div>
-            </div>
-          </div>
+          <Image
+            src="/images/re-elect-logo.png"
+            alt="Re-elect Adale Martin, Norfolk School Board, Ward 1. Kids First for a Better Norfolk"
+            width={1024}
+            height={662}
+            priority
+            className="h-auto w-[168px] shadow-[0_12px_40px_rgba(0,44,88,0.35)] transition duration-300 group-hover:-translate-y-0.5 sm:w-[200px] md:w-[228px]"
+          />
         </Link>
 
         <div className="hidden items-center gap-1 pt-2 lg:flex">
