@@ -34,7 +34,7 @@ export function SiteHeader() {
         </Link>
 
         <div className="hidden items-center gap-1 pt-2 lg:flex">
-          <nav className="flex items-center gap-1" aria-label="Primary">
+          <nav className="flex items-center gap-0.5 xl:gap-1" aria-label="Primary">
             {nav.map((item) =>
               "children" in item ? (
                 <div
@@ -45,7 +45,7 @@ export function SiteHeader() {
                 >
                   <button
                     type="button"
-                    className={`inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium tracking-wide transition ${
+                    className={`inline-flex items-center gap-1 px-1.5 py-2 text-[13px] font-bold tracking-wide whitespace-nowrap xl:gap-1.5 xl:px-3 xl:text-[15px] transition ${
                       item.children.some((c) => isActive(c.href))
                         ? "text-gold-bright"
                         : "text-white/90 hover:text-white"
@@ -77,7 +77,7 @@ export function SiteHeader() {
                         key={child.href}
                         href={child.href}
                         role="menuitem"
-                        className={`block px-4 py-3 text-sm transition hover:bg-white/5 ${
+                        className={`block px-4 py-3 text-sm font-semibold transition hover:bg-white/5 ${
                           isActive(child.href)
                             ? "text-gold-bright"
                             : "text-white/85"
@@ -92,7 +92,7 @@ export function SiteHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-3 py-2 text-sm font-medium tracking-wide transition ${
+                  className={`px-1.5 py-2 text-[13px] font-bold tracking-wide whitespace-nowrap xl:px-3 xl:text-[15px] transition ${
                     isActive(item.href)
                       ? "text-gold-bright underline decoration-gold/70 underline-offset-8"
                       : "text-white/90 hover:text-white"
@@ -139,7 +139,7 @@ export function SiteHeader() {
                 <div key={item.label}>
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between py-3 text-left text-base text-white"
+                    className="flex w-full items-center justify-between py-3 text-left text-lg font-bold text-white"
                     onClick={() => setGoalsOpen((v) => !v)}
                     aria-expanded={goalsOpen}
                   >
@@ -152,7 +152,7 @@ export function SiteHeader() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block py-2 text-sm text-white/80"
+                          className="block py-2 text-base font-semibold text-white/80"
                         >
                           {child.label}
                         </Link>
@@ -164,7 +164,7 @@ export function SiteHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="py-3 text-base text-white"
+                  className="py-3 text-lg font-bold text-white"
                 >
                   {item.label}
                 </Link>

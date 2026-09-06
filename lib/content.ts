@@ -77,13 +77,16 @@ export const recordStats = [
     label: "Graduation rate goal",
   },
   {
-    value: "87%+",
+    value: "91%+",
     label: "Teacher retention under her watch",
   },
 ] as const;
 
 export const vision =
   "I am committed to ensuring at least a 95% Graduation Rate for Norfolk Public School seniors so that they can have opportunities upon graduation, which means that they are prepared to be Enrolled, Employed, or Enlisted.";
+
+export const aboutFeatured =
+  "Focused on a 95% graduation rate — enrolled, employed, or enlisted.";
 
 export const aboutParagraphs = [
   "Dr. Adale Martin was elected to the Norfolk Public School Board in 2018. Dr. Martin was the NPS Board Chair during COVID for three terms. She has a proven record of focusing on improving student academic outcomes, expanding security resources in schools, and supporting our amazing teachers and staff.",
@@ -96,28 +99,47 @@ export const aboutParagraphs = [
 export const aboutClosing =
   "Most of all, Dr. Adale Martin is a tenacious advocate for NPS students.";
 
+export const serviceRecord = [
+  "Norfolk Public School Board 2018 – Present",
+  "Past Norfolk Public Schools Board Chair (2020 – 2022)",
+  "Norfolk Public Schools, Policy Committee, 2018 – 2020 & 2023 – Present",
+  "Graduate, University of Virginia, Sorensen’s Political Leaders Institute, Class of 2021",
+  "Class of 2021 Representative, Alumni Council, Sorensen’s Political Leaders Institute (2021–Present)",
+  "Access College Foundation, Board of Directors, Norfolk Public Schools Representative (2024–Present)",
+  "Norfolk Commission of Life-long Learning (2019–2022)",
+  "WHRO HRETA Committee 2018–2020",
+  "Virginia School Boards Association (VSBA) Federal Legislative Committee (2024–Present)",
+  "Tidewater Representative Selection Committee (2025–Present)",
+  "Norfolk’s Poverty Reduction Committee (2013–14), Education and Workforce Development Committee",
+  "Norfolk Jury Commission (2010–11)",
+  "Magnolia Circle of the Kings Daughters, Past President & Chair of the Dragon Boat Race Fundraiser (2014–Present); CHKD Membership, Advocacy, and Communications Committees",
+  "Naval Station Norfolk Centennial Commission (2015–16)",
+  "Slover Foundation liaison to the Norfolk Public Library Board of Trustees (2015–2025)",
+  "Lambert’s Point Open Space, Board of Directors (2025–Present)",
+] as const;
+
 export const goals = {
   academic: {
     title: "Improving Academic Outcomes",
     body: [
       "As a school board member and mother of two NPS students, I have first-hand experience with the challenges of online learning during the COVID-19 pandemic. In challenging times, I believe an important lesson to teach our students is resilience.",
-      "Since the return to in-person learning in March of 2021, NPS has focused on remediating the loss of learning opportunities by providing direct lines of support to the classrooms. This comprehensive approach includes designing academically robust summer school programs, implementing school level data review meetings, investing in extra instructional supports and services for educators, and increasing early literacy program supports in pre-k–3rd grades. NPS is already experiencing increases in English (83%) and Math (48%) performance rates from pre-pandemic levels.",
-      "…but there’s still work to do, which is why I am focused on improving the graduation rate so that NPS seniors will have opportunities upon graduation and are prepared to be enrolled in higher education, employed, or enlisted in military services.",
+      "Since the return to in-person learning in March of 2021, NPS has focused on remediating the loss of learning opportunities by providing direct lines of support to the classrooms. This comprehensive approach includes designing academically robust summer school programs, implementing school-level data review meetings, investing in extra instructional supports and services for educators, and increasing early literacy program supports in pre-K–3rd grades. NPS is already experiencing increases in English (83%) and Math (48%) performance rates from pre-pandemic levels.",
+      "…but there’s still work to do, which is why I remain focused on improving the graduation rate so that NPS seniors will have opportunities upon graduation and are prepared to be ENROLLED in higher education, EMPLOYED toward a career path, or ENLISTED in military services.",
     ],
   },
   safety: {
     title: "Safety & Security Resources in Our Schools",
     body: [
-      "I am a steadfast advocate for safety and security at NPS schools. I was Chair of the NPS Board for three terms during COVID — the most demanding time in public education — confronting the impact of a global pandemic, including safely returning to in-person learning. During this time, NPS reached a 90% vaccination rate of our 5,033 employees and expanded resources to address social, emotional, and behavioral needs in schools. NPS also launched the Vector Alert Tip Reporting app that provides students, parents/guardians, and staff a safe way to report bullying and safety concerns anytime, anywhere, and on any device. I will continue to advocate for expanding security resource officers to all NPS schools, including elementary schools.",
-      "Providing safe and secure learning environments at NPS schools is fundamental and requires an integrated effort by our city, state, and community partners to recognize, understand, and address risks in our community before they impact our schools. Overall, security begins with a culture of civility, trust, and dialogue with the broader community and city partners, of which we can each do our part.",
+      "I am a steadfast advocate for safety and security at NPS schools — against threats old and new, from school violence and mental health crises to bullying and online safety risks. I was Chair of the NPS Board for three terms, leading during one of the most demanding stretches in public education, and worked to expand resources addressing the social, emotional, and behavioral needs of our students. NPS also launched the Vector Alert Tip Reporting app that provides students, parents/guardians, and staff a safe way to report bullying, threats, and safety concerns anytime, anywhere, and on any device. I will continue to advocate for expanding security resource officers to all NPS schools, including elementary schools, and for strengthening mental health support and digital safety protections that address the risks students face today.",
+      "Providing safe and secure learning environments at NPS schools is fundamental and requires an integrated effort by our city, state, and community partners to recognize, understand, and address risks — physical and digital — before they impact our schools. Overall, security begins with a culture of civility, trust, and dialogue with the broader community and city partners, of which we can each do our part.",
     ],
   },
   workforce: {
     title: "Workforce Retention",
     body: [
-      "Norfolk Public Schools is the largest non-federal employer in the City of Norfolk with over 5,033 employees. Despite a national workforce shortage, the Norfolk Public Schools’ teacher retention rate is over 87%, exceeding the national average.",
-      "An organization’s budget is a direct reflection of its priorities. The NPS Board approved funding in the SY2023 Budget to provide a more equitable pay scale and incentive bonuses for teachers. Our bus drivers continue to be the highest paid in the region. We are also expanding support positions in our schools by increasing gifted resource teachers, English language learner teachers, behavioral specialists, social workers, school psychologists, and improving coordination of social-emotional services by lengthening the contract of an administrator of school social work from 10 months to 12 months.",
-      "Additionally, NPS is renowned for providing comprehensive professional development opportunities that prepare teachers so that they can be confident in the classroom. Importantly, the NPS Board listens and supports our employees. Teacher recommended changes include asynchronous Wednesdays, eliminating half school days, and more breaks in March.",
+      "Norfolk Public Schools remains one of the largest employers in the City of Norfolk — the largest employer within city government itself — with more than 5,600 employees dedicated to serving our students. Despite a national workforce shortage, our teacher retention rate has climbed to 91%, already surpassing the district’s own goal set for 2026–2027 and exceeding the national average.",
+      "An organization’s budget is a direct reflection of its priorities. The NPS Board approved funding in the FY2026 Budget to provide a 4.5% salary increase, a $3,000 retention bonus for returning staff, and new hiring incentives to recruit and keep great teachers. Our bus drivers remain among the highest paid in the region. We are also expanding support positions in our schools — adding mental health social workers, behavioral specialists, and an occupational therapist, while continuing funding for the school psychologists and social workers who serve students with disabilities.",
+      "Additionally, NPS is renowned for providing comprehensive professional development opportunities that prepare teachers so that they can be confident in the classroom. Importantly, the NPS Board listens and supports our employees — most recently surveying more than 2,400 teachers and families on proposed changes to the 2027–2028 school calendar to address concerns about burnout and protect planning time.",
       "As a parent and school board member, I am grateful for our NPS employees and the important work they do every day for our students! I will continue to work with our teachers, administrators, and support staff to ensure that they have the resources they need to be the best versions of themselves because we are truly in this together for Norfolk’s kids!",
     ],
   },
@@ -140,7 +162,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Norfolk Public Schools needs leadership with the experience, education, and passion to make the best decisions for our schools. As a parent, she is the best choice. I voted for Adale Martin before and I will do it again on Nov. 8th.",
+      "Norfolk Public Schools needs leadership with the experience, education, and passion to make the best decisions for our schools. As a parent, she is the best choice. I voted for Adale Martin before and I will do it again on November 3rd.",
     name: "Jennifer Henderson",
     role: "Norfolk Parent",
   },

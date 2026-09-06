@@ -31,29 +31,31 @@ export default function ComparePage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 md:grid-cols-[0.85fr_1.15fr] md:gap-14 md:px-8 md:py-20">
+      <section className="mx-auto max-w-3xl px-5 py-14 md:px-8 md:py-20">
         <Reveal>
-          <div className="relative aspect-[3/4] overflow-hidden bg-navy">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden bg-navy">
             <Image
-              src="/images/adale-family-clean.webp"
-              alt="Dr. Adale Martin with her sons"
+              src="/images/AdaleMartinCampaignPhoto.jpg"
+              alt="Dr. Adale Martin"
               fill
               priority
-              className="object-contain object-top"
-              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover object-[70%_30%]"
+              sizes="(max-width: 768px) 100vw, 448px"
             />
           </div>
         </Reveal>
         <Reveal delay={80}>
-          <Eyebrow>A parent who leads</Eyebrow>
-          <Display as="h2" className="mt-3 text-3xl text-navy md:text-5xl">
-            Experience, advocacy, and results — already on the job
-          </Display>
-          <p className="mt-5 text-lg leading-relaxed text-muted">
-            Adale isn’t asking for a chance to learn the role. She was the Board
-            Chair during COVID for three terms, a parent of two public school
-            students, and a proven advocate for Norfolk Public School students.
-          </p>
+          <div className="mt-10">
+            <Eyebrow>A parent who leads</Eyebrow>
+            <Display as="h2" className="mt-3 text-3xl text-navy md:text-5xl">
+              Experience, advocacy, and results — already on the job
+            </Display>
+            <p className="mt-5 text-lg leading-relaxed text-muted">
+              Adale isn’t asking for a chance to learn the role. She was the Board
+              Chair during COVID for three terms, a parent of two public school
+              students, and a proven advocate for Norfolk Public School students.
+            </p>
+          </div>
         </Reveal>
       </section>
 

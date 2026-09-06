@@ -4,9 +4,15 @@ type PageHeroProps = {
   eyebrow?: string;
   title: string;
   lead?: string;
+  eyebrowSize?: "default" | "large";
 };
 
-export function PageHero({ eyebrow, title, lead }: PageHeroProps) {
+export function PageHero({
+  eyebrow,
+  title,
+  lead,
+  eyebrowSize = "default",
+}: PageHeroProps) {
   return (
     <section className="relative overflow-hidden bg-navy pt-52 pb-16 md:pt-64 md:pb-20">
       <div
@@ -28,7 +34,9 @@ export function PageHero({ eyebrow, title, lead }: PageHeroProps) {
       <div className="relative mx-auto max-w-4xl px-5 md:px-8">
         {eyebrow && (
           <div className="fade-up">
-            <Eyebrow tone="white">{eyebrow}</Eyebrow>
+            <Eyebrow tone="white" size={eyebrowSize}>
+              {eyebrow}
+            </Eyebrow>
           </div>
         )}
         <Display

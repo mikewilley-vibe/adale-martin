@@ -4,9 +4,11 @@ import type { ReactNode } from "react";
 export function Eyebrow({
   children,
   tone = "forest",
+  size = "default",
 }: {
   children: ReactNode;
   tone?: "forest" | "gold" | "white";
+  size?: "default" | "large";
 }) {
   const color =
     tone === "gold"
@@ -14,13 +16,13 @@ export function Eyebrow({
       : tone === "white"
         ? "text-gold-bright"
         : "text-forest";
+  const scale =
+    size === "large"
+      ? "text-sm font-bold tracking-[0.16em] md:text-base"
+      : "text-xs font-semibold tracking-[0.22em]";
 
   return (
-    <p
-      className={`text-xs font-semibold tracking-[0.22em] uppercase ${color}`}
-    >
-      {children}
-    </p>
+    <p className={`uppercase ${scale} ${color}`}>{children}</p>
   );
 }
 

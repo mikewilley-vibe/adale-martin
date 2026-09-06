@@ -12,7 +12,7 @@ export default function WorkforcePage() {
       title={goals.workforce.title}
       paragraphs={goals.workforce.body}
       href="/goals/workforce"
-      highlight="87%+ teacher retention — above the national average — because educators matter."
+      highlight="91%+ teacher retention — above the national average — because educators matter."
     />
   );
 }

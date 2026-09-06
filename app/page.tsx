@@ -5,7 +5,7 @@ import { CtaRow } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { Ticker } from "@/components/Ticker";
 import { ButtonLink, Display, Eyebrow } from "@/components/ui";
-import { site } from "@/lib/content";
+import { aboutFeatured, site } from "@/lib/content";
 
 const pillars = [
   {
@@ -30,11 +30,11 @@ export default function HomePage() {
     <>
       <section className="relative min-h-[100svh] overflow-hidden bg-navy">
         <Image
-          src="/images/adale-family-hero.webp"
-          alt="Dr. Adale Martin with her sons"
+          src="/images/AdaleMartinCampaignPhoto.jpg"
+          alt="Dr. Adale Martin"
           fill
           priority
-          className="object-cover object-[72%_28%] opacity-70 md:object-[78%_30%]"
+          className="object-cover object-[center_18%] opacity-80 md:object-[72%_20%]"
           sizes="100vw"
         />
         <div
@@ -62,9 +62,9 @@ export default function HomePage() {
                 Adale
                 <span className="block text-gold-bright">Martin</span>
               </Display>
-              <p className="fade-up-delay-2 mt-5 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
-                {site.tagline}. A tenacious advocate for Norfolk Public School
-                students — and a parent who shows up.
+              <p className="fade-up-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
+                A Product of Public Education from Pre-K to Ph.D. and An
+                Experienced Advocate for Norfolk Public Schools.
               </p>
               <div className="fade-up-delay-3 mt-8">
                 <CtaRow />
@@ -135,26 +135,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-20 md:grid-cols-2 md:gap-16 md:px-8 md:py-28">
+      <section className="mx-auto max-w-3xl px-5 py-20 md:px-8 md:py-28">
         <Reveal>
-          <div className="relative aspect-[3/4] overflow-hidden bg-navy">
-            <Image
-              src="/images/adale-family-clean.webp"
-              alt="Dr. Adale Martin"
-              fill
-              className="object-contain object-top transition duration-700 hover:scale-[1.02]"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </Reveal>
-        <Reveal delay={120}>
-          <Eyebrow>About Adale</Eyebrow>
+          <Eyebrow size="large">Meet the Candidate</Eyebrow>
           <Display
             as="h2"
-            className="mt-3 text-3xl text-navy md:text-5xl"
+            className="mt-3 text-3xl font-bold text-navy md:text-5xl"
           >
-            Leadership rooted in Norfolk’s classrooms and community
+            About Adale
           </Display>
+          <p className="mt-5 font-[family-name:var(--font-baskerville)] text-xl leading-snug text-navy md:text-2xl">
+            {aboutFeatured}
+          </p>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Elected in 2018 and Board Chair during COVID for three terms, Adale
             brings public policy expertise, special-education advocacy, and daily
