@@ -5,6 +5,8 @@ import { Reveal } from "@/components/Reveal";
 import { Display, Prose, Quote } from "@/components/ui";
 import {
   aboutClosing,
+  aboutCommunityIntro,
+  aboutCommunityRoles,
   aboutParagraphs,
   serviceRecord,
   testimonials,
@@ -56,6 +58,12 @@ export default function AboutPage() {
                 {aboutParagraphs.map((p) => (
                   <p key={p.slice(0, 40)}>{p}</p>
                 ))}
+                <p>{aboutCommunityIntro}</p>
+                <ul className="list-disc space-y-2 pl-5 text-base leading-snug md:text-lg">
+                  {aboutCommunityRoles.map((role) => (
+                    <li key={role}>{role}</li>
+                  ))}
+                </ul>
                 <p className="font-[family-name:var(--font-baskerville)] text-2xl leading-snug text-navy not-italic md:text-3xl">
                   {aboutClosing}
                 </p>
@@ -66,27 +74,17 @@ export default function AboutPage() {
       </section>
 
       <section className="border-t border-navy/8 bg-white/50">
-        <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
+        <div className="mx-auto max-w-3xl px-5 py-16 md:px-8 md:py-24">
           <Reveal>
             <Display as="h2" className="text-3xl text-navy md:text-4xl">
               Adale’s Record of Service to Norfolk, Virginia
             </Display>
           </Reveal>
-          <div className="mt-10 space-y-3">
-            {serviceRecord.map((item, i) => (
-              <Reveal key={item} delay={(i % 4) * 40}>
-                <article className="relative overflow-hidden border border-navy/10 bg-white/70 px-5 py-4 md:px-8">
-                  <span
-                    className="absolute top-0 left-0 h-full w-1 bg-gold"
-                    aria-hidden
-                  />
-                  <p className="font-[family-name:var(--font-baskerville)] text-base leading-relaxed text-ink md:text-lg">
-                    {item}
-                  </p>
-                </article>
-              </Reveal>
+          <ul className="mt-10 list-disc space-y-2 pl-6 font-[family-name:var(--font-baskerville)] text-base leading-snug text-ink md:text-lg">
+            {serviceRecord.map((item) => (
+              <li key={item}>{item}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
     </>

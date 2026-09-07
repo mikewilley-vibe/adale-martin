@@ -51,8 +51,8 @@ export default function ComparePage() {
               Experience, advocacy, and results — already on the job
             </Display>
             <p className="mt-5 text-lg leading-relaxed text-muted">
-              Adale isn’t asking for a chance to learn the role. She was the Board
-              Chair during COVID for three terms, a parent of two public school
+              Adale isn’t asking for a chance to learn the role. She was Board
+              Chair for three terms, a parent of two public school
               students, and a proven advocate for Norfolk Public School students.
             </p>
           </div>

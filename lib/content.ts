@@ -38,7 +38,6 @@ export const nav = [
   { label: "Why Adale?", href: "/compare" },
   { label: "What Parents Are Saying", href: "/parents" },
   { label: "Get Involved", href: "/get-involved" },
-  { label: "Donate", href: "/donate" },
   { label: "Vote", href: "/vote" },
 ] as const;
 
@@ -70,7 +69,7 @@ export const recordStats = [
   },
   {
     value: "3×",
-    label: "Board Chair during COVID",
+    label: "Terms as Board Chair",
   },
   {
     value: "95%",
@@ -93,11 +92,21 @@ export const aboutParagraphs = [
   "As a proud mother of two students with accommodations, Adale works with families to understand their rights when navigating the Individual Educational Plan (IEP) & 504 processes. She works to improve equitable access to available resources and services.",
   "Adale is passionate about education. She is a product of public education from Pre-K – Ph.D.! Adale earned her Doctoral degree from Old Dominion University’s School of Public Service in public policy with a specialization in collaboration and international security policy, a Master of Public Administration degree from Louisiana State University, and a bachelor’s degree from The Ohio State University in International and French Studies. Adale is also an alumnus of the University of Virginia’s Sorensen’s Political Leaders Program and currently serves as a class representative on the Sorensen’s Alumni Council.",
   "Dr. Martin’s professional career has been focused on adult education and training, curriculum development, and program management. She managed clinical and scientific oncologic programs at the American Society of Clinical Oncology and counter-terrorism training for first responders and SWAT Teams at the National Center for Biomedical Research and Training at Louisiana State University.",
-  "Adale is passionate about serving our community, which is evident in the work that she does every day. She is Principal of AM&Co. Strategies, LLC, and formerly Executive Director of the Slover Library Foundation, where she oversaw operations, development, events, community engagement and impact, marketing, and communications. Dr. Martin is a liaison to the Norfolk Public Library Board of Trustees, advocate, and fundraiser in support of CHKD as a member of the Magnolia Circle of the King’s Daughters, and a member of the Garden Club of Norfolk.",
+];
+
+export const aboutCommunityIntro =
+  "Adale is passionate about serving our community, which is evident in the work that she does every day.";
+
+export const aboutCommunityRoles = [
+  "Principal of AM&Co. Strategies, LLC",
+  "Formerly Executive Director of the Slover Library Foundation, overseeing operations, development, events, community engagement and impact, marketing, and communications",
+  "Served as a liaison to the Norfolk Public Library Board of Trustees",
+  "Advocate and fundraiser in support of CHKD as a member of the Magnolia Circle of the King’s Daughters",
+  "Member of the Garden Club of Norfolk",
 ];
 
 export const aboutClosing =
-  "Most of all, Dr. Adale Martin is a tenacious advocate for NPS students.";
+  "Most of all, Dr. Adale Martin is an experienced advocate for NPS students.";
 
 export const serviceRecord = [
   "Norfolk Public School Board 2018 – Present",
@@ -122,8 +131,8 @@ export const goals = {
   academic: {
     title: "Improving Academic Outcomes",
     body: [
-      "As a school board member and mother of two NPS students, I have first-hand experience with the challenges of online learning during the COVID-19 pandemic. In challenging times, I believe an important lesson to teach our students is resilience.",
-      "Since the return to in-person learning in March of 2021, NPS has focused on remediating the loss of learning opportunities by providing direct lines of support to the classrooms. This comprehensive approach includes designing academically robust summer school programs, implementing school-level data review meetings, investing in extra instructional supports and services for educators, and increasing early literacy program supports in pre-K–3rd grades. NPS is already experiencing increases in English (83%) and Math (48%) performance rates from pre-pandemic levels.",
+      "As a school board member and mother of two NPS students, I know firsthand the challenges families face when learning is disrupted. In challenging times, I believe an important lesson to teach our students is resilience.",
+      "NPS has focused on remediating lost learning by providing direct lines of support to the classrooms. This comprehensive approach includes designing academically robust summer school programs, implementing school-level data review meetings, investing in extra instructional supports and services for educators, and increasing early literacy program supports in pre-K–3rd grades. NPS is already experiencing increases in English (83%) and Math (48%) performance rates.",
       "…but there’s still work to do, which is why I remain focused on improving the graduation rate so that NPS seniors will have opportunities upon graduation and are prepared to be ENROLLED in higher education, EMPLOYED toward a career path, or ENLISTED in military services.",
     ],
   },
@@ -202,11 +211,11 @@ export const comparison = {
   rows: [
     {
       category: "School Board Experience",
-      body: "Elected to the Norfolk Public School Board in 2018. Served as Board Chair during COVID for three terms — leading through the crisis & safely returning to in-person learning and post-pandemic recovery.",
+      body: "Elected to the Norfolk Public School Board in 2018. Served as Board Chair for three terms — leading the district through demanding years and keeping students, families, and educators at the center of every decision.",
     },
     {
       category: "Proven Record on NPS",
-      body: "Focused board leadership on academic outcomes, expanded school security resources, and educator support. Guided NPS through pandemic response, summer remediation, early literacy supports, and workforce investments — with English and Math performance rising from pre-pandemic levels.",
+      body: "Focused board leadership on academic outcomes, expanded school security resources, and educator support. Advanced summer remediation, early literacy supports, and workforce investments — with English and Math performance rising.",
     },
     {
       category: "Parent Perspective",
@@ -222,13 +231,13 @@ export const comparison = {
     },
     {
       category: "Norfolk Community Service",
-      body: "Liaison to the Norfolk Public Library Board of Trustees; CHKD advocate via Magnolia Circle of the King’s Daughters; Garden Club of Norfolk. Deep, day-to-day civic work in the city she serves.",
+      body: "Served as liaison to the Norfolk Public Library Board of Trustees; CHKD advocate via Magnolia Circle of the King’s Daughters; Garden Club of Norfolk. Deep, day-to-day civic work in the city she serves.",
     },
   ],
   closingPoints: [
     {
       title: "She’s already done the job",
-      body: "School board isn’t an entry-level role. Adale was Board Chair during COVID for three terms, made hard votes, and stayed focused on kids — not campaign slogans.",
+      body: "School board isn’t an entry-level role. Adale was Board Chair for three terms, made hard votes, and stayed focused on kids — not campaign slogans.",
     },
     {
       title: "Policy training meets classroom reality",

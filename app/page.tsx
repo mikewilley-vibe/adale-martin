@@ -148,7 +148,7 @@ export default function HomePage() {
             {aboutFeatured}
           </p>
           <p className="mt-5 text-lg leading-relaxed text-muted">
-            Elected in 2018 and Board Chair during COVID for three terms, Adale
+            Elected in 2018 and Board Chair for three terms, Adale
             brings public policy expertise, special-education advocacy, and daily
             community service to the work of putting kids first.
           </p>
