@@ -18,15 +18,15 @@ export const site = {
   /** Local election day — countdown target (America/New_York). */
   electionDayIso: "2026-11-03T07:00:00-05:00",
   social: {
-    instagram: "http://www.instagram.com/adale_martin4NPS",
+    instagram: "https://www.instagram.com/adale_martin4NPS",
     facebook: "https://www.facebook.com/AdaleMartin4NPS/",
-    twitter: "http://www.twitter.com/adalemartin4NPS",
+    twitter: "https://twitter.com/adalemartin4NPS",
   },
 } as const;
 
 export const nav = [
   {
-    label: "My Goals for Our Kids",
+    label: "Goals",
     href: "/goals/academic-outcomes",
     children: [
       { label: "Improving Academic Outcomes", href: "/goals/academic-outcomes" },
@@ -35,8 +35,9 @@ export const nav = [
     ],
   },
   { label: "About Adale", href: "/about" },
+  { label: "Record of Service", href: "/service" },
   { label: "Why Adale?", href: "/compare" },
-  { label: "What Parents Are Saying", href: "/parents" },
+  { label: "Parents", href: "/parents" },
   { label: "Get Involved", href: "/get-involved" },
   { label: "Vote", href: "/vote" },
 ] as const;
@@ -76,7 +77,7 @@ export const recordStats = [
     label: "Graduation rate goal",
   },
   {
-    value: "91%+",
+    value: "91%",
     label: "Teacher retention under her watch",
   },
 ] as const;
@@ -94,38 +95,53 @@ export const aboutParagraphs = [
   "Dr. Martin’s professional career has been focused on adult education and training, curriculum development, and program management. She managed clinical and scientific oncologic programs at the American Society of Clinical Oncology and counter-terrorism training for first responders and SWAT Teams at the National Center for Biomedical Research and Training at Louisiana State University.",
 ];
 
-export const aboutCommunityIntro =
-  "Adale is passionate about serving our community, which is evident in the work that she does every day.";
+export const serviceRecordGroups = [
+  {
+    title: "School board & education governance",
+    items: [
+      "Norfolk Public School Board 2018 – Present",
+      "Past Norfolk Public Schools Board Chair (2020 – 2022)",
+      "Norfolk Public Schools, Policy Committee, 2018 – 2020 & 2023 – Present",
+      "Virginia School Boards Association (VSBA) Federal Legislative Committee (2024–Present)",
+      "Tidewater Regional School Board Representative Selection Committee (2025–Present)",
+      "Access College Foundation, Board of Directors, Norfolk Public Schools Representative (2024–Present)",
+    ],
+  },
+  {
+    title: "Education & training",
+    items: [
+      "Graduate, University of Virginia, Sorensen’s Political Leaders Institute, Class of 2021",
+      "Class of 2021 Representative, Alumni Council, Sorensen’s Political Leaders Institute (2021–Present)",
+    ],
+  },
+  {
+    title: "Civic service",
+    items: [
+      "WHRO HRETA Committee 2018–2020",
+      "Norfolk Commission of Life-long Learning (2019–2022)",
+      "Norfolk’s Poverty Reduction Committee (2013–14), Education and Workforce Development Committee",
+      "Norfolk Jury Commission (2010–11)",
+      "Naval Station Norfolk Centennial Commission (2015–16)",
+      "Lambert’s Point Open Space, Board of Directors (2025–Present)",
+      "World Affairs Council of Hampton Roads, Board of Directors (2025–Present)",
+    ],
+  },
+  {
+    title: "Organizational affiliations",
+    items: [
+      "Principal of A.M. & Co. Strategies, LLC",
+      "Formerly Executive Director of the Slover Library Foundation (2015–2025), overseeing operations, development, events, community engagement and impact, marketing, and communications",
+      "Slover Foundation liaison to the Norfolk Public Library Board of Trustees (2015–2025)",
+      "Magnolia Circle of the King’s Daughters, Past President & Chair of the Dragon Boat Race Fundraiser (2014–Present); CHKD Membership, Advocacy, and Communications Committees",
+      "Member of the Garden Club of Norfolk, Virginia, and America",
+    ],
+  },
+] as const;
 
-export const aboutCommunityRoles = [
-  "Principal of AM&Co. Strategies, LLC",
-  "Formerly Executive Director of the Slover Library Foundation, overseeing operations, development, events, community engagement and impact, marketing, and communications",
-  "Served as a liaison to the Norfolk Public Library Board of Trustees",
-  "Advocate and fundraiser in support of CHKD as a member of the Magnolia Circle of the King’s Daughters",
-  "Member of the Garden Club of Norfolk",
-];
+export const serviceRecord = serviceRecordGroups.flatMap((group) => group.items);
 
 export const aboutClosing =
   "Most of all, Dr. Adale Martin is an experienced advocate for NPS students.";
-
-export const serviceRecord = [
-  "Norfolk Public School Board 2018 – Present",
-  "Past Norfolk Public Schools Board Chair (2020 – 2022)",
-  "Norfolk Public Schools, Policy Committee, 2018 – 2020 & 2023 – Present",
-  "Graduate, University of Virginia, Sorensen’s Political Leaders Institute, Class of 2021",
-  "Class of 2021 Representative, Alumni Council, Sorensen’s Political Leaders Institute (2021–Present)",
-  "Access College Foundation, Board of Directors, Norfolk Public Schools Representative (2024–Present)",
-  "Norfolk Commission of Life-long Learning (2019–2022)",
-  "WHRO HRETA Committee 2018–2020",
-  "Virginia School Boards Association (VSBA) Federal Legislative Committee (2024–Present)",
-  "Tidewater Representative Selection Committee (2025–Present)",
-  "Norfolk’s Poverty Reduction Committee (2013–14), Education and Workforce Development Committee",
-  "Norfolk Jury Commission (2010–11)",
-  "Magnolia Circle of the Kings Daughters, Past President & Chair of the Dragon Boat Race Fundraiser (2014–Present); CHKD Membership, Advocacy, and Communications Committees",
-  "Naval Station Norfolk Centennial Commission (2015–16)",
-  "Slover Foundation liaison to the Norfolk Public Library Board of Trustees (2015–2025)",
-  "Lambert’s Point Open Space, Board of Directors (2025–Present)",
-] as const;
 
 export const goals = {
   academic: {
@@ -204,7 +220,7 @@ export const testimonials = [
 /** Why Adale — credentials and record (no opponent references). */
 export const comparison = {
   intro:
-    "Adale has already led Norfolk Public Schools through the hardest years in a generation — and delivered results for students, families, and educators.",
+    "Adale has already led Norfolk Public Schools — and delivered results for students, families, and educators.",
   addition:
     "As fluctuating enrollment patterns and shifting birth rates create new financial realities for Norfolk Public Schools, Ward 1 School Board Representative Dr. Adale Martin is leading the call for a transparent, community-centered response. Recognizing that school transitions can cause anxiety for families, Dr. Martin is actively advocating for enhanced multilingual communication and institutional clarity. To ease the uncertainty associated with shifting district structures, her re-election campaign is prioritizing unity throughout the community to support our students through this transition. She aims to eliminate the apprehension of changing schools by welcoming students and families into a cohesive and supportive new educational community.",
   recordHeading: "Adale’s Record for Norfolk’s Schools",
@@ -227,11 +243,11 @@ export const comparison = {
     },
     {
       category: "Professional Leadership",
-      body: "Career in adult education, curriculum development, and program management — including clinical/scientific programs at the American Society of Clinical Oncology and first-responder training at LSU’s National Center for Biomedical Research and Training. Formerly Executive Director of the Slover Library Foundation. Principal, AM&Co. Strategies, LLC.",
+      body: "Career in adult education, curriculum development, and program management — including clinical/scientific programs at the American Society of Clinical Oncology and first-responder training at LSU’s National Center for Biomedical Research and Training. Formerly Executive Director of the Slover Library Foundation. Principal, A.M. & Co. Strategies, LLC.",
     },
     {
       category: "Norfolk Community Service",
-      body: "Served as liaison to the Norfolk Public Library Board of Trustees; CHKD advocate via Magnolia Circle of the King’s Daughters; Garden Club of Norfolk. Deep, day-to-day civic work in the city she serves.",
+      body: "Slover Foundation liaison to the Norfolk Public Library Board of Trustees; CHKD advocate via Magnolia Circle of the King’s Daughters; Garden Club of Norfolk, Virginia, and America.",
     },
   ],
   closingPoints: [

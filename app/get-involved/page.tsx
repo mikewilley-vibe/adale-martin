@@ -66,8 +66,8 @@ export default function GetInvolvedPage() {
               Request a lawn sign
             </Display>
             <p className="mt-4 text-muted">
-              Tell us where to deliver. We’ll follow up to confirm availability
-              in your neighborhood.
+              Tell us where to deliver. Submit the form and the campaign will
+              follow up to confirm availability in your neighborhood.
             </p>
             <div className="mt-8">
               <InvolveForm mode="sign" />

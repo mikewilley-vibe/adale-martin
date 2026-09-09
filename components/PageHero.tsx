@@ -46,7 +46,7 @@ export function PageHero({
           {title}
         </Display>
         {lead && (
-          <p className="fade-up-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-white/75 md:text-xl">
+          <p className="fade-up-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-white md:text-xl">
             {lead}
           </p>
         )}
@@ -65,16 +65,10 @@ export function CtaRow() {
         Donate
       </a>
       <a
-        href="mailto:adale.martin4NPS@gmail.com?subject=Volunteer"
+        href="/get-involved"
         className="border border-white/35 bg-white/5 px-6 py-3 text-sm font-bold tracking-[0.14em] text-white uppercase backdrop-blur transition hover:bg-white/10"
       >
         Volunteer
-      </a>
-      <a
-        href="/about"
-        className="border border-transparent px-6 py-3 text-sm font-semibold tracking-[0.08em] text-white/80 underline-offset-4 transition hover:text-gold-bright hover:underline"
-      >
-        Meet Adale
       </a>
     </div>
   );

@@ -43,7 +43,7 @@ export function GoalNav({ current }: { current: string }) {
 
 export function GoalPage({
   title,
-  eyebrow = "My Goals for Our Kids",
+  eyebrow = "Goals",
   paragraphs,
   href,
   highlight,

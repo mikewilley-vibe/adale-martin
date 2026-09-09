@@ -12,10 +12,25 @@ export const metadata: Metadata = {
     "Early voting and Election Day information for re-electing Dr. Adale Martin to Norfolk School Board, Ward 1.",
 };
 
+const officialLinks = [
+  {
+    label: "Check registration & polling place",
+    href: "https://www.elections.virginia.gov/citizen-portal/",
+  },
+  {
+    label: "Norfolk voter registration & elections",
+    href: "https://www.norfolk.gov/210/Voter-Registration-Elections",
+  },
+  {
+    label: "Virginia photo ID requirements",
+    href: "https://www.elections.virginia.gov/casting-a-ballot/in-person-voting/",
+  },
+] as const;
+
 const steps = [
   {
     title: "Confirm you’re in Ward 1",
-    body: "School Board seats are by ward. Make sure your Norfolk address falls in Ward 1 before you vote.",
+    body: "Norfolk School Board is elected by ward. Confirm your address is in Ward 1 — a citywide or at-large vote does not elect this seat.",
   },
   {
     title: "Vote early if you can",
@@ -85,6 +100,27 @@ export default function VotePage() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal>
+          <div className="mt-16 border border-navy/10 bg-white/70 px-6 py-8 md:px-8">
+            <Eyebrow>Official resources</Eyebrow>
+            <Display as="h2" className="mt-3 text-2xl text-navy md:text-3xl">
+              Register, find your precinct, and check ID rules
+            </Display>
+            <p className="mt-4 max-w-2xl leading-relaxed text-muted">
+              Use Virginia and City of Norfolk sites for voter registration,
+              your polling place, and in-person ID requirements. Then vote
+              Adale Martin for Norfolk School Board, Ward 1.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {officialLinks.map((link) => (
+                <ButtonLink key={link.href} href={link.href} external>
+                  {link.label}
+                </ButtonLink>
+              ))}
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       <section className="border-y border-navy/8 bg-white/55">

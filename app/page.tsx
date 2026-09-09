@@ -41,7 +41,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(105deg, rgba(0,44,88,0.94) 0%, rgba(0,44,88,0.78) 40%, rgba(0,54,108,0.28) 68%, rgba(0,54,108,0.45) 100%), linear-gradient(0deg, rgba(0,44,88,0.7) 0%, transparent 45%)",
+              "linear-gradient(105deg, rgba(0,44,88,0.97) 0%, rgba(0,44,88,0.88) 36%, rgba(0,54,108,0.38) 68%, rgba(0,54,108,0.52) 100%), linear-gradient(0deg, rgba(0,44,88,0.78) 0%, transparent 42%)",
           }}
         />
 
@@ -62,7 +62,7 @@ export default function HomePage() {
                 Adale
                 <span className="block text-gold-bright">Martin</span>
               </Display>
-              <p className="fade-up-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
+              <p className="fade-up-delay-2 mt-5 max-w-2xl text-lg leading-relaxed text-white md:text-xl">
                 A Product of Public Education from Pre-K to Ph.D. and An
                 Experienced Advocate for Norfolk Public Schools.
               </p>
@@ -154,6 +154,9 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/about">Full bio</ButtonLink>
+            <ButtonLink href="/service" variant="ghost-dark">
+              Record of Service
+            </ButtonLink>
             <ButtonLink href="/compare" variant="ghost-dark">
               Why Adale?
             </ButtonLink>

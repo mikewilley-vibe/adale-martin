@@ -2,13 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
-import { Display, Prose, Quote } from "@/components/ui";
+import { ButtonLink, Display, Prose, Quote } from "@/components/ui";
 import {
   aboutClosing,
-  aboutCommunityIntro,
-  aboutCommunityRoles,
   aboutParagraphs,
-  serviceRecord,
   testimonials,
 } from "@/lib/content";
 
@@ -58,34 +55,18 @@ export default function AboutPage() {
                 {aboutParagraphs.map((p) => (
                   <p key={p.slice(0, 40)}>{p}</p>
                 ))}
-                <p>{aboutCommunityIntro}</p>
-                <ul className="list-disc space-y-2 pl-5 text-base leading-snug md:text-lg">
-                  {aboutCommunityRoles.map((role) => (
-                    <li key={role}>{role}</li>
-                  ))}
-                </ul>
                 <p className="font-[family-name:var(--font-baskerville)] text-2xl leading-snug text-navy not-italic md:text-3xl">
                   {aboutClosing}
                 </p>
               </Prose>
             </div>
+            <div className="mt-8">
+              <ButtonLink href="/service" variant="ghost-dark">
+                Record of Service
+              </ButtonLink>
+            </div>
           </article>
         </Reveal>
-      </section>
-
-      <section className="border-t border-navy/8 bg-white/50">
-        <div className="mx-auto max-w-3xl px-5 py-16 md:px-8 md:py-24">
-          <Reveal>
-            <Display as="h2" className="text-3xl text-navy md:text-4xl">
-              Adale’s Record of Service to Norfolk, Virginia
-            </Display>
-          </Reveal>
-          <ul className="mt-10 list-disc space-y-2 pl-6 font-[family-name:var(--font-baskerville)] text-base leading-snug text-ink md:text-lg">
-            {serviceRecord.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
       </section>
     </>
   );

@@ -23,7 +23,10 @@ export function InvolveForm({ mode }: { mode: Mode }) {
   const [selected, setSelected] = useState<string[]>(
     mode === "sign" ? ["Yard sign"] : [],
   );
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
+    "idle",
+  );
+  const [error, setError] = useState("");
 
   function toggle(option: string) {
     setSelected((prev) =>
@@ -33,8 +36,11 @@ export function InvolveForm({ mode }: { mode: Mode }) {
     );
   }
 
-  function onSubmit(e: FormEvent) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault();
+    setStatus("sending");
+    setError("");
+
     const subject =
       mode === "sign"
         ? "Yard sign request"
@@ -42,25 +48,52 @@ export function InvolveForm({ mode }: { mode: Mode }) {
           ? "Campaign updates signup"
           : "Volunteer signup";
 
-    const lines = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      phone ? `Phone: ${phone}` : "",
-      address ? `Address / Neighborhood: ${address}` : "",
-      selected.length ? `Interests: ${selected.join(", ")}` : "",
-      message ? `Message:\n${message}` : "",
-    ].filter(Boolean);
-
-    const href = `mailto:${site.email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(lines.join("\n"))}`;
-
-    window.location.href = href;
-    setSent(true);
+    try {
+      const res = await fetch("/api/involve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          mode,
+          name,
+          email,
+          phone,
+          address,
+          interests: selected,
+          message,
+          subject,
+        }),
+      });
+      if (!res.ok) {
+        const data = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(data.error || "Could not send.");
+      }
+      setStatus("sent");
+      setName("");
+      setEmail("");
+      setPhone("");
+      setAddress("");
+      setMessage("");
+      setSelected(mode === "sign" ? ["Yard sign"] : []);
+    } catch (err) {
+      setStatus("error");
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Could not send. Please email the campaign.",
+      );
+    }
   }
 
   const field =
     "mt-1 w-full border border-navy/15 bg-white px-3 py-2.5 text-ink outline-none transition focus:border-forest";
+
+  if (status === "sent") {
+    return (
+      <p className="border border-forest/20 bg-white/80 px-4 py-4 text-sm leading-relaxed text-forest">
+        Thank you. The campaign received your note and will follow up.
+      </p>
+    );
+  }
 
   return (
     <form onSubmit={onSubmit} className="space-y-4">
@@ -153,17 +186,27 @@ export function InvolveForm({ mode }: { mode: Mode }) {
       </div>
       <button
         type="submit"
-        className="bg-navy px-6 py-3 text-sm font-bold tracking-[0.14em] text-white uppercase transition hover:bg-forest"
+        disabled={status === "sending"}
+        className="bg-navy px-6 py-3 text-sm font-bold tracking-[0.14em] text-white uppercase transition hover:bg-forest disabled:opacity-60"
       >
-        {mode === "sign"
-          ? "Request a sign"
-          : mode === "updates"
-            ? "Get updates"
-            : "Volunteer"}
+        {status === "sending"
+          ? "Sending…"
+          : mode === "sign"
+            ? "Request a sign"
+            : mode === "updates"
+              ? "Get updates"
+              : "Volunteer"}
       </button>
-      {sent && (
-        <p className="text-sm text-forest">
-          Opening your email app to send this to the campaign…
+      {status === "error" && (
+        <p className="text-sm text-red-800">
+          {error} You can also write{" "}
+          <a
+            href={`mailto:${site.email}`}
+            className="font-semibold underline-offset-2 hover:underline"
+          >
+            {site.email}
+          </a>
+          .
         </p>
       )}
     </form>

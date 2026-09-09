@@ -18,12 +18,35 @@ const sourceSans = Source_Sans_3({
   subsets: ["latin"],
 });
 
+const description = `${site.name} for Norfolk School Board, Ward 1. ${site.tagline}.`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.adalemartin.com"),
   title: {
     default: `${site.name} for ${site.office}`,
     template: `%s — ${site.name}`,
   },
-  description: `${site.name} for Norfolk School Board, Ward 1. ${site.tagline}.`,
+  description,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.adalemartin.com",
+    siteName: site.name,
+    title: `${site.name} for ${site.office}`,
+    description,
+    images: [
+      {
+        url: "/images/AdaleMartinCampaignPhoto.jpg",
+        alt: "Dr. Adale Martin",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} for ${site.office}`,
+    description,
+    images: ["/images/AdaleMartinCampaignPhoto.jpg"],
+  },
 };
 
 export default function RootLayout({

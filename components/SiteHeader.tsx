@@ -104,8 +104,16 @@ export function SiteHeader() {
             )}
           </nav>
 
-          <div className="ml-3 flex items-center gap-2 border-l border-white/20 pl-4">
+          <div className="ml-3 flex items-center gap-3 border-l border-white/20 pl-4">
             <SocialLinks />
+            {site.donateEnabled ? (
+              <Link
+                href="/donate"
+                className="bg-gold px-3 py-2 text-[12px] font-bold tracking-[0.14em] text-navy-deep uppercase transition hover:bg-gold-bright xl:px-4"
+              >
+                Donate
+              </Link>
+            ) : null}
           </div>
         </div>
 
@@ -162,6 +170,14 @@ export function SiteHeader() {
                 </Link>
               ),
             )}
+            {site.donateEnabled ? (
+              <Link
+                href="/donate"
+                className="mt-4 inline-block bg-gold px-5 py-3 text-center text-sm font-bold tracking-[0.14em] text-navy-deep uppercase"
+              >
+                Donate
+              </Link>
+            ) : null}
             <div className="mt-4 flex gap-4">
               <SocialLinks />
             </div>
