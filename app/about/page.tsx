@@ -4,8 +4,8 @@ import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { ButtonLink, Display, Prose, Quote } from "@/components/ui";
 import {
+  aboutBio,
   aboutClosing,
-  aboutParagraphs,
   testimonials,
 } from "@/lib/content";
 
@@ -52,9 +52,30 @@ export default function AboutPage() {
             </Display>
             <div className="mt-6">
               <Prose>
-                {aboutParagraphs.map((p) => (
+                {aboutBio.opening.map((p) => (
                   <p key={p.slice(0, 40)}>{p}</p>
                 ))}
+                <div>
+                  <Display as="h3" className="text-xl text-navy md:text-2xl">
+                    {aboutBio.educationHeading}
+                  </Display>
+                  <p className="mt-4">{aboutBio.educationIntro}</p>
+                  <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-snug md:text-lg">
+                    {aboutBio.educationItems.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <Display as="h3" className="text-xl text-navy md:text-2xl">
+                    {aboutBio.professionalHeading}
+                  </Display>
+                  {aboutBio.professional.map((p) => (
+                    <p key={p.slice(0, 40)} className="mt-4">
+                      {p}
+                    </p>
+                  ))}
+                </div>
                 <p className="font-[family-name:var(--font-baskerville)] text-2xl leading-snug text-navy not-italic md:text-3xl">
                   {aboutClosing}
                 </p>

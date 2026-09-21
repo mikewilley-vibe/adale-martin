@@ -88,12 +88,26 @@ export const vision =
 export const aboutFeatured =
   "Focused on a 95% graduation rate — enrolled, employed, or enlisted.";
 
-export const aboutParagraphs = [
-  "Dr. Adale Martin was elected to the Norfolk Public School Board in 2018. Dr. Martin was the NPS Board Chair during COVID for three terms. She has a proven record of focusing on improving student academic outcomes, expanding security resources in schools, and supporting our amazing teachers and staff.",
-  "As a proud mother of two students with accommodations, Adale works with families to understand their rights when navigating the Individual Educational Plan (IEP) & 504 processes. She works to improve equitable access to available resources and services.",
-  "Adale is passionate about education. She is a product of public education from Pre-K – Ph.D.! Adale earned her Doctoral degree from Old Dominion University’s School of Public Service in public policy with a specialization in collaboration and international security policy, a Master of Public Administration degree from Louisiana State University, and a bachelor’s degree from The Ohio State University in International and French Studies. Adale is also an alumnus of the University of Virginia’s Sorensen’s Political Leaders Program and currently serves as a class representative on the Sorensen’s Alumni Council.",
-  "Dr. Martin’s professional career has been focused on adult education and training, curriculum development, and program management. She managed clinical and scientific oncologic programs at the American Society of Clinical Oncology and counter-terrorism training for first responders and SWAT Teams at the National Center for Biomedical Research and Training at Louisiana State University.",
-];
+export const aboutBio = {
+  opening: [
+    "Dr. Adale Martin was elected to the Norfolk School Board in 2018 and has served three terms as Board Chair, including during the unprecedented challenges of the COVID-19 pandemic. Throughout her service, she has maintained a clear focus on improving student academic outcomes, expanding school security resources, and supporting Norfolk Public Schools teachers and staff.",
+    "As a mother of a Norfolk Public Schools graduate and a current high school student, Dr. Martin brings both professional expertise and firsthand experience as a public-school parent to her work. She collaborates with families to help them understand their rights as they navigate the school system, while working to strengthen equitable access to the resources and services students need to succeed.",
+  ],
+  educationHeading: "A Lifelong Commitment to Public Education",
+  educationIntro:
+    "Dr. Martin is a proud product of public education—from Pre-K through her Ph.D. Her educational background includes:",
+  educationItems: [
+    "A Ph.D. in Public Policy from Old Dominion University’s School of Public Service, with specializations in collaboration and international security policy.",
+    "A Master of Public Administration from Louisiana State University.",
+    "A bachelor’s degree in International Studies and French from The Ohio State University.",
+    "Completion of the University of Virginia Sorensen Institute for Political Leadership Program, where she now serves as a class representative on the Sorensen Alumni Council.",
+  ],
+  professionalHeading: "Professional Experience",
+  professional: [
+    "Dr. Martin’s career has centered on adult education and training, curriculum development, and program management. Her experience includes managing clinical and scientific oncology programs at the American Society of Clinical Oncology and overseeing counterterrorism training for first responders and SWAT teams at Louisiana State University’s National Center for Biomedical Research and Training.",
+    "That combination of education, public-policy expertise, training leadership, and parent perspective informs her work on behalf of Norfolk students, families, educators, and the broader community.",
+  ],
+} as const;
 
 export const serviceRecordGroups = [
   {
